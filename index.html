@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Amsterdam Luxury | Fine Dining & Live Dinner Show in Agadir</title>
+    <meta name="title" content="Amsterdam Luxury | Fine Dining & Live Dinner Show in Agadir">
+    <meta name="description"
+        content="Experience Amsterdam Luxury in Agadir — refined fine dining, signature dishes, crafted cocktails and unforgettable live dinner shows. Reserve your table today.">
+    <meta name="keywords"
+        content="Amsterdam Luxury, Agadir restaurant, fine dining Agadir, dinner show Morocco, luxury steakhouse Agadir, Moroccan cocktails, live entertainment Agadir">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://amsterdamluxury.ma/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="restaurant">
+    <meta property="og:url" content="https://amsterdamluxury.ma/">
+    <meta property="og:title" content="Amsterdam Luxury | Fine Dining & Live Dinner Show in Agadir">
+    <meta property="og:description"
+        content="Experience Amsterdam Luxury in Agadir — refined fine dining, signature dishes, crafted cocktails and unforgettable live dinner shows.">
+    <meta property="og:image" content="./assets/imgs/Amsterdam_BG.jpeg">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://amsterdamluxury.ma/">
+    <meta property="twitter:title" content="Amsterdam Luxury | Fine Dining & Live Dinner Show in Agadir">
+    <meta property="twitter:description"
+        content="Experience Amsterdam Luxury in Agadir — refined fine dining, signature dishes, crafted cocktails and unforgettable live dinner shows.">
+    <meta property="twitter:image" content="./assets/imgs/Amsterdam_BG.jpeg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="./assets/imgs/Amsterdam_Logo.jpeg">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Amsterdam Luxury",
+      "image": "./assets/imgs/Amsterdam_BG.jpeg",
+      "logo": "./assets/imgs/Amsterdam_Logo.jpeg",
+      "@id": "https://amsterdamluxury.ma",
+      "url": "https://amsterdamluxury.ma",
+      "telephone": "+212528201799",
+      "priceRange": "$$$",
+      "servesCuisine": ["Fine Dining", "Steakhouse", "Moroccan", "International", "Cocktails"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Boulevard 20 Août, Zone Touristique",
+        "addressLocality": "Agadir",
+        "postalCode": "80000",
+        "addressCountry": "MA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 30.427755,
+        "longitude": -9.598107
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "18:00",
+          "closes": "03:00"
+        }
+      ],
+      "sameAs": [
+        "https://instagram.com/amsterdamagadir",
+        "https://tiktok.com/@amsterdamluxury"
+      ]
+    }
+    </script>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- AOS Animation Library CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+    <!-- Custom Luxury Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ======================================================================
+         1. HEADER & NAVBAR
+         ====================================================================== -->
+    <header class="header_navbar">
+        <div class="container-fluid px-lg-5 px-3">
+            <div class="d-flex align-items-center justify-content-between">
+
+                <!-- Brand / Logo -->
+                <a href="index.html" class="brand_logo_link" aria-label="Amsterdam Luxury Homepage">
+                    <img src="./assets/imgs/Amsterdam_Logo.jpeg" alt="Amsterdam Luxury Logo" class="brand_logo_img">
+                    <div class="brand_text_box">
+                        <span class="brand_title">AMSTERDAM</span>
+                        <span class="brand_tagline">LUXURY • AGADIR</span>
+                    </div>
+                </a>
+
+                <!-- Right Action Controls: Reserve Table + Menu Toggle -->
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#reservation" class="luxury_btn_gold header_reserve_btn">
+                        <i class="bi bi-calendar2-check"></i> Reserve a Table
+                    </a>
+
+                    <!-- Luxury Menu Toggle Button -->
+                    <button class="header_menu_toggle_btn" id="header_menu_toggle_btn"
+                        aria-label="Toggle navigation menu">
+                        <span class="toggle_bars_icon">
+                            <span class="bar bar_top"></span>
+                            <span class="bar bar_mid"></span>
+                            <span class="bar bar_bot"></span>
+                        </span>
+                        <span class="toggle_btn_label">MENU</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Luxury Sidebar Navigation Drawer -->
+    <div class="drawer_backdrop"></div>
+    <aside class="luxury_sidebar_drawer" aria-label="Main Navigation Sidebar">
+        <div class="drawer_header">
+            <a href="index.html" class="drawer_brand_box">
+                <img src="./assets/imgs/Amsterdam_Logo.jpeg" alt="Amsterdam Luxury" class="drawer_brand_logo">
+                <div>
+                    <span class="drawer_brand_title">AMSTERDAM LUXURY</span>
+                    <span class="drawer_brand_sub">RESTAURANT • LOUNGE • SHOW</span>
+                </div>
+            </a>
+            <button class="drawer_close_btn" aria-label="Close navigation menu">
+                <i class="bi bi-x-lg"></i>
+        </div>
+
+        <div class="drawer_body_content">
+            <ul class="drawer_links">
+                <li>
+                    <a href="index.html" class="drawer_link active">
+                        <span class="drawer_link_num">01</span>
+                        <span class="drawer_link_text">Home</span>
+                        <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" class="drawer_link">
+                        <span class="drawer_link_num">02</span>
+                        <span class="drawer_link_text">About Us</span>
+                        <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="menu.html" class="drawer_link">
+                        <span class="drawer_link_num">03</span>
+                        <span class="drawer_link_text">Signature Menu</span>
+                        <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="dinner-show.html" class="drawer_link">
+                        <span class="drawer_link_num">04</span>
+                        <span class="drawer_link_text">Live Dinner Show</span>
+                        <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="private-events.html" class="drawer_link">
+                        <span class="drawer_link_num">05</span>
+                        <span class="drawer_link_text">Private Events</span>
+                        <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="gallery.html" class="drawer_link">
+                        <span class="drawer_link_num">06</span>
+                        <span class="drawer_link_text">Visual Gallery</span>
+                        <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html" class="drawer_link">
+                        <span class="drawer_link_num">07</span>
+                        <span class="drawer_link_text">Contact & Location</span>
+                        <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="drawer_info_box">
+                <div class="drawer_info_item">
+                    <i class="bi bi-geo-alt text-warning"></i>
+                    <span>Résidence Islane GH14, N6, Agadir 80000, Morocco</span>
+                </div>
+                <div class="drawer_info_item">
+                    <i class="bi bi-clock text-warning"></i>
+                    <span>Nightly: 18:00 – 03:00 (Dinner & Show)</span>
+                </div>
+                <div class="drawer_info_item">
+                    <i class="bi bi-telephone text-warning"></i>
+                    <span>+212 5 28 20 17 99</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="drawer_footer">
+            <div class="d-flex flex-column gap-2 mb-3">
+                <a href="#reservation" class="luxury_btn_gold w-100 text-center">
+                    <i class="bi bi-calendar-check"></i> Book VIP Table
+                </a>
+                <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer"
+                    class="luxury_btn_whatsapp w-100 text-center">
+                    <i class="bi bi-whatsapp"></i> Chat on WhatsApp Concierge
+                </a>
+            </div>
+
+            <div class="drawer_social_row">
+                <a href="https://instagram.com/amsterdamagadir" target="_blank" rel="noopener noreferrer"
+                    class="drawer_social_icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://tiktok.com/@amsterdamluxury" target="_blank" rel="noopener noreferrer"
+                    class="drawer_social_icon" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="drawer_social_icon"
+                    aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer"
+                    class="drawer_social_icon" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ======================================================================
+         MAIN CONTENT SECTIONS
+         ====================================================================== -->
+    <main>
+
+        <!-- ==================================================================
+             2. HERO SECTION
+             ================================================================== -->
+        <section id="home" class="hero_section">
+            <div class="hero_bg_layer"
+                style="background-image: url('./assets/imgs/Restaurant/Restaurent_Asthetic2.PNG');"></div>
+            <div class="hero_overlay"></div>
+
+            <div class="container position-relative">
+                <div class="hero_content_wrapper">
+
+                    <div class="hero_badge_box" data-aos="fade-down" data-aos-duration="1000">
+                        <span class="hero_badge">
+                            <i class="bi bi-stars"></i> AMSTERDAM LUXURY AGADIR <i class="bi bi-stars"></i>
+                        </span>
+                    </div>
+
+                    <h1 class="hero_main_title" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100">
+                        A World of Refined Taste
+                    </h1>
+
+                    <p class="hero_tagline_text" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200">
+                        Fine Dining • Live Dinner Show • Exceptional Atmosphere
+                    </p>
+
+                    <p class="hero_desc_text" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300">
+                        Step into Agadir’s most prestigious dining and entertainment destination. An elevated culinary
+                        journey combining prime gastronomy, signature mixology, and electrifying live performances.
+                    </p>
+
+                    <div class="hero_actions_box" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="400">
+                        <a href="#reservation" class="luxury_btn_gold">
+                            <i class="bi bi-calendar2-check"></i> Reserve a Table
+                        </a>
+                        <a href="menu.html" class="luxury_btn_outline">
+                            <i class="bi bi-compass"></i> Explore Menu
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <a href="#about" class="hero_scroll_indicator" aria-label="Scroll down to discover story">
+                <div class="scroll_mouse_icon">
+                    <span class="scroll_wheel_dot"></span>
+                </div>
+                <span>Scroll Down</span>
+            </a>
+        </section>
+
+        <!-- ==================================================================
+             3. BRAND STORY / INTRODUCTION
+             ================================================================== -->
+        <section id="about" class="luxury_section about_section">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- Left: Framed Photograph -->
+                    <div class="col-lg-6 col-12" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="about_image_frame">
+                            <img src="./assets/imgs/Restaurant/Restaurent_Asthetic1.PNG"
+                                alt="Amsterdam Luxury architectural illuminated staircase and atmosphere in Agadir"
+                                class="about_main_img" loading="lazy">
+                            <div class="about_floating_badge">
+                                <span class="badge_number">100%</span>
+                                <span class="badge_text">Halal & Luxury Dining</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Story Narrative -->
+                    <div class="col-lg-6 col-12" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+                        <div class="about_content_box">
+                            <span class="section_label">WELCOME TO AMSTERDAM</span>
+                            <h2 class="section_title">Where Taste Meets Spectacle</h2>
+                            <div class="gold_divider_left"></div>
+
+                            <p class="about_lead_text">
+                                Amsterdam Luxury is a sophisticated dining destination in Agadir combining refined
+                                cuisine, premium hospitality, elegant surroundings, and an unforgettable live dinner
+                                experience.
+                            </p>
+
+                            <div class="about_feature_list">
+                                <div class="about_feature_item">
+                                    <i class="bi bi-music-note-beamed about_feature_icon"></i>
+                                    <div>
+                                        <h4 class="about_feature_title">Live Dinner Shows</h4>
+                                        <p class="about_feature_sub">Nightly live entertainment & musicians</p>
+                                    </div>
+                                </div>
+                                <div class="about_feature_item">
+                                    <i class="bi bi-shield-check about_feature_icon"></i>
+                                    <div>
+                                        <h4 class="about_feature_title">VIP Hospitality</h4>
+                                        <p class="about_feature_sub">Discreet and attentive personal service</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="#experience" class="luxury_btn_outline">
+                                Discover Our Story <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             4. RESTAURANT EXPERIENCE (4 LUXURY CARDS)
+             ================================================================== -->
+        <section id="experience" class="luxury_section experience_section">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <span class="section_label">CURATED MOMENTS</span>
+                    <h2 class="section_title">The Amsterdam Experience</h2>
+                    <div class="gold_divider"></div>
+                    <p class="section_subtitle">
+                        Immerse yourself in a synchronized harmony of sensory indulgence, captivating theatrical
+                        entertainment, and bespoke Moroccan hospitality.
+                    </p>
+                </div>
+
+                <div class="row g-4 mt-4">
+                    <!-- Card 1 -->
+                    <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="100">
+                        <div class="experience_card">
+                            <span class="experience_card_number">01</span>
+                            <div class="experience_icon_box">
+                                <i class="bi bi-egg-fried"></i>
+                            </div>
+                            <h3 class="experience_title">Fine Dining</h3>
+                            <p class="experience_desc">
+                                Exceptional dishes made with carefully selected ingredients, prime halal cuts, and
+                                Michelin-inspired culinary artistry.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
+                        <div class="experience_card">
+                            <span class="experience_card_number">02</span>
+                            <div class="experience_icon_box">
+                                <i class="bi bi-mic"></i>
+                            </div>
+                            <h3 class="experience_title">Live Dinner Show</h3>
+                            <p class="experience_desc">
+                                A vibrant evening filled with international performers, live musical artistry, and an
+                                unforgettable celebration atmosphere.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
+                        <div class="experience_card">
+                            <span class="experience_card_number">03</span>
+                            <div class="experience_icon_box">
+                                <i class="bi bi-gem"></i>
+                            </div>
+                            <h3 class="experience_title">Luxury Atmosphere</h3>
+                            <p class="experience_desc">
+                                Lavish dark wood interiors, warm champagne lighting, and opulent private salons designed
+                                for memorable evenings.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                        <div class="experience_card">
+                            <span class="experience_card_number">04</span>
+                            <div class="experience_icon_box">
+                                <i class="bi bi-suit-heart"></i>
+                            </div>
+                            <h3 class="experience_title">Premium Hospitality</h3>
+                            <p class="experience_desc">
+                                Personalized VIP table service with meticulous attention to detail from the moment you
+                                step through our golden doors.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             5. SIGNATURE MENU SECTION & CATEGORY TABS
+             ================================================================== -->
+        <section id="menu" class="luxury_section menu_section">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <span class="section_label">OUR GASTRONOMY</span>
+                    <h2 class="section_title">Signature Creations</h2>
+                    <div class="gold_divider"></div>
+                    <p class="section_subtitle">
+                        A refined selection crafted for unforgettable evenings. Prepared with passion by master chefs
+                        using prime ingredients.
+                    </p>
+                </div>
+
+                <!-- Category Tabs -->
+                <div class="menu_tabs_wrapper mt-5" data-aos="fade-up" data-aos-delay="100">
+                    <button class="menu_tab_btn active" data-category="all">All Dishes</button>
+                    <button class="menu_tab_btn" data-category="starters">Starters</button>
+                    <button class="menu_tab_btn" data-category="mains">Main Courses</button>
+                    <button class="menu_tab_btn" data-category="burgers">Burgers</button>
+                    <button class="menu_tab_btn" data-category="desserts">Desserts</button>
+                    <button class="menu_tab_btn" data-category="drinks">Mixology</button>
+                </div>
+
+                <!-- Menu Items Grid -->
+                <div class="row" id="menu_items_container">
+
+                    <!-- Dish 1 -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 menu_item_col" data-category="mains" data-aos="fade-up">
+                        <div class="menu_card">
+                            <div class="menu_img_box">
+                                <img src="./assets/imgs/Restaurant/Food1.PNG"
+                                    alt="Prime Beef Tenderloin - Amsterdam Luxury Agadir" class="menu_card_img"
+                                    loading="lazy">
+                                <span class="menu_category_tag">Main Course</span>
+                            </div>
+                            <div class="menu_content_box">
+                                <div class="menu_header_row">
+                                    <h3 class="menu_item_title">Prime Beef Tenderloin</h3>
+                                    <span class="menu_item_badge_tag">Prime Halal</span>
+                                </div>
+                                <p class="menu_item_desc">Charcoal grilled prime beef tenderloin served with roasted
+                                    seasonal vegetables, sweet corn, truffle butter and refined demi-glace.</p>
+                                <div class="menu_item_footer">
+                                    <span class="menu_item_badge"><i class="bi bi-stars"></i> Chef Signature</span>
+                                    <a href="#reservation" class="menu_order_btn">Reserve Table <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dish 2 -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 menu_item_col" data-category="burgers" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <div class="menu_card">
+                            <div class="menu_img_box">
+                                <img src="./assets/imgs/Restaurant/Food2.PNG"
+                                    alt="Amsterdam 24K Gold Wagyu Burger - Amsterdam Luxury Agadir"
+                                    class="menu_card_img" loading="lazy">
+                                <span class="menu_category_tag">24K Signature</span>
+                            </div>
+                            <div class="menu_content_box">
+                                <div class="menu_header_row">
+                                    <h3 class="menu_item_title">Amsterdam 24K Gold Burger</h3>
+                                    <span class="menu_item_badge_tag">24K Gold</span>
+                                </div>
+                                <p class="menu_item_desc">Master A5 Wagyu beef patty draped in edible 24-karat gold
+                                    leaf, melted cheddar, truffle sauce, served with crispy golden wire basket fries.
+                                </p>
+                                <div class="menu_item_footer">
+                                    <span class="menu_item_badge"><i class="bi bi-stars"></i> Imperial Gold</span>
+                                    <a href="#reservation" class="menu_order_btn">Reserve Table <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dish 3 -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 menu_item_col" data-category="mains" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="menu_card">
+                            <div class="menu_img_box">
+                                <img src="./assets/imgs/Restaurant/Food6.PNG"
+                                    alt="Glazed Beef Ribs & Truffle Chicken Banquet - Amsterdam Luxury Agadir"
+                                    class="menu_card_img" loading="lazy">
+                                <span class="menu_category_tag">Main Course</span>
+                            </div>
+                            <div class="menu_content_box">
+                                <div class="menu_header_row">
+                                    <h3 class="menu_item_title">Glazed Beef Ribs Banquet</h3>
+                                    <span class="menu_item_badge_tag">Sharing Feast</span>
+                                </div>
+                                <p class="menu_item_desc">Slow-glazed beef short ribs on the bone with toasted sesame,
+                                    creamy mushroom chicken fricassee, basmati rice and roasted vegetables.</p>
+                                <div class="menu_item_footer">
+                                    <span class="menu_item_badge"><i class="bi bi-stars"></i> Royal Feast</span>
+                                    <a href="#reservation" class="menu_order_btn">Reserve Table <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dish 4 -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 menu_item_col" data-category="starters"
+                        data-aos="fade-up">
+                        <div class="menu_card">
+                            <div class="menu_img_box">
+                                <img src="./assets/imgs/Restaurant/Food4.PNG"
+                                    alt="Sizzling Garlic Gambas & Truffle Croquettes - Amsterdam Luxury Agadir"
+                                    class="menu_card_img" loading="lazy">
+                                <span class="menu_category_tag">Starter</span>
+                            </div>
+                            <div class="menu_content_box">
+                                <div class="menu_header_row">
+                                    <h3 class="menu_item_title">Garlic Gambas & Croquettes</h3>
+                                    <span class="menu_item_badge_tag">Truffle & Seafood</span>
+                                </div>
+                                <p class="menu_item_desc">Wild Atlantic prawns in sizzling clay terracotta with garlic
+                                    and lime, paired with artisan golden crispy truffle croquettes.</p>
+                                <div class="menu_item_footer">
+                                    <span class="menu_item_badge"><i class="bi bi-stars"></i> Tapas Royale</span>
+                                    <a href="#reservation" class="menu_order_btn">Reserve Table <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dish 5 -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 menu_item_col" data-category="starters" data-aos="fade-up"
+                        data-aos-delay="100">
+                        <div class="menu_card">
+                            <div class="menu_img_box">
+                                <img src="./assets/imgs/Restaurant/Food5.PNG"
+                                    alt="Exotic Mango Chicken Walnut Salad - Amsterdam Luxury Agadir"
+                                    class="menu_card_img" loading="lazy">
+                                <span class="menu_category_tag">Starter</span>
+                            </div>
+                            <div class="menu_content_box">
+                                <div class="menu_header_row">
+                                    <h3 class="menu_item_title">Exotic Mango Chicken Salad</h3>
+                                    <span class="menu_item_badge_tag">Organic</span>
+                                </div>
+                                <p class="menu_item_desc">Grilled marinated chicken breast, ripe sweet mango slices,
+                                    roasted walnuts, sweet corn, cherry tomatoes with dark artisan bread basket.</p>
+                                <div class="menu_item_footer">
+                                    <span class="menu_item_badge"><i class="bi bi-stars"></i> Fresh Gourmet</span>
+                                    <a href="#reservation" class="menu_order_btn">Reserve Table <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dish 6 -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 menu_item_col" data-category="desserts" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <div class="menu_card">
+                            <div class="menu_img_box">
+                                <img src="./assets/imgs/Restaurant/Sweet1.PNG"
+                                    alt="Molten Chocolate Lava Fondant - Amsterdam Luxury Agadir" class="menu_card_img"
+                                    loading="lazy">
+                                <span class="menu_category_tag">Dessert</span>
+                            </div>
+                            <div class="menu_content_box">
+                                <div class="menu_header_row">
+                                    <h3 class="menu_item_title">Molten Chocolate Fondant</h3>
+                                    <span class="menu_item_badge_tag">Valrhona Dark</span>
+                                </div>
+                                <p class="menu_item_desc">Warm molten Valrhona chocolate lava cake dusted with powdered
+                                    sugar, salted caramel drizzle, and artisanal vanilla bean gelato.</p>
+                                <div class="menu_item_footer">
+                                    <span class="menu_item_badge"><i class="bi bi-stars"></i> Decadent</span>
+                                    <a href="#reservation" class="menu_order_btn">Reserve Table <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-5" data-aos="fade-up">
+                    <a href="menu.html" class="luxury_btn_gold me-3">
+                        <i class="bi bi-journal-text"></i> View Full Menu
+                    </a>
+                    <a href="#reservation" class="luxury_btn_outline">
+                        <i class="bi bi-calendar-check"></i> Reserve a Table
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             6. FEATURED EDITORIAL SECTION (MAGAZINE SPOTLIGHT)
+             ================================================================== -->
+        <section class="editorial_section">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- Left: Large Food Editorial Photo -->
+                    <div class="col-lg-6 col-12" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="editorial_image_wrapper">
+                            <img src="./assets/imgs/Menu1.jpeg" alt="Amsterdam Luxury signature grilled steak cut"
+                                class="editorial_main_img" loading="lazy">
+                            <div class="editorial_quote_card">
+                                <p class="editorial_quote_text">
+                                    “Every cut is a masterwork of flavor, searing heat, and culinary precision.”
+                                </p>
+                                <span class="editorial_quote_author">Executive Head Chef</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Magazine Typography -->
+                    <div class="col-lg-6 col-12" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+                        <div class="editorial_content_col">
+                            <span class="editorial_eyebrow">CRAFTED WITH PRECISION</span>
+                            <h2 class="editorial_headline">Every Plate Tells a Story</h2>
+                            <div class="gold_divider_left"></div>
+
+                            <p class="editorial_p">
+                                We believe fine dining transcends sustenance; it is a theatrical art form. Our prime
+                                steaks are dry-aged for minimum 45 days, seared over natural aromatic charcoal, and
+                                finished with house-rendered herb bone marrows and delicate sea salts.
+                            </p>
+
+                            <div class="editorial_spec_grid">
+                                <div>
+                                    <span class="spec_value">45 Days</span>
+                                    <span class="spec_label">Dry-Aging Process</span>
+                                </div>
+                                <div>
+                                    <span class="spec_value">800°C</span>
+                                    <span class="spec_label">Charcoal Sear</span>
+                                </div>
+                                <div>
+                                    <span class="spec_value">100%</span>
+                                    <span class="spec_label">Certified Halal</span>
+                                </div>
+                            </div>
+
+                            <a href="#menu" class="luxury_btn_gold">
+                                Discover the Menu <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             7. SIGNATURE COCKTAILS SECTION
+             ================================================================== -->
+        <section id="cocktails" class="luxury_section cocktail_section">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <span class="section_label">ALCHEMIC MIXOLOGY</span>
+                    <h2 class="section_title">Signature Cocktails</h2>
+                    <div class="gold_divider"></div>
+                    <p class="section_subtitle">
+                        Artfully crafted for unforgettable nights. Explore botanical infusions, rare cordials, and
+                        gold-dusted elixirs.
+                    </p>
+                </div>
+
+                <!-- Cocktails Grid -->
+                <div class="row mt-4" id="cocktail_cards_container">
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4" data-aos="fade-up">
+                        <div class="cocktail_card">
+                            <div class="cocktail_img_wrapper mb-3"
+                                style="border-radius: var(--border_radius_md); overflow: hidden; height: 180px;">
+                                <img src="./assets/imgs/Restaurant/Drink4.PNG" alt="Amsterdam Twilight Horizon Cocktail"
+                                    style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease;">
+                            </div>
+                            <h3 class="cocktail_title">Amsterdam Sunset</h3>
+                            <div class="cocktail_ingredients">Blackberry Infusion • Citrus Cordial • Mint • Spun Lemon
+                                Peel</div>
+                            <p class="cocktail_desc">A vibrant tropical symphony inspired by Moroccan twilight horizons,
+                                crafted with hand-pressed juices and sparkling essence.</p>
+                            <div class="cocktail_footer_meta">
+                                <span class="cocktail_tag"><i class="bi bi-gem"></i> Signature</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="cocktail_card">
+                            <div class="cocktail_img_wrapper mb-3"
+                                style="border-radius: var(--border_radius_md); overflow: hidden; height: 180px;">
+                                <img src="./assets/imgs/Restaurant/Drink2.PNG"
+                                    alt="Amsterdam Berry & Wild Blueberry Mojito"
+                                    style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease;">
+                            </div>
+                            <h3 class="cocktail_title">Royal Berry Velvet</h3>
+                            <div class="cocktail_ingredients">Crushed Wild Berries • Blueberries • Fresh Mint •
+                                Sparkling Soda</div>
+                            <p class="cocktail_desc">Served over crushed mountain ice in custom gold-embossed Amsterdam
+                                glassware with wild forest berries and garden mint.</p>
+                            <div class="cocktail_footer_meta">
+                                <span class="cocktail_tag"><i class="bi bi-fire"></i> Custom Glass Can</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="cocktail_card">
+                            <div class="cocktail_img_wrapper mb-3"
+                                style="border-radius: var(--border_radius_md); overflow: hidden; height: 180px;">
+                                <img src="./assets/imgs/Restaurant/Drink1.PNG"
+                                    alt="Amsterdam Matcha Mango Artisan Can Drink"
+                                    style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease;">
+                            </div>
+                            <h3 class="cocktail_title">Golden Matcha Palm</h3>
+                            <div class="cocktail_ingredients">Ceremonial Matcha • Mango Puree • Passionfruit • Cold
+                                Pressed</div>
+                            <p class="cocktail_desc">Exotic layered fusion of Japanese ceremonial green matcha and sweet
+                                Agadir mango nectar sealed in a gold-crested artisan can.</p>
+                            <div class="cocktail_footer_meta">
+                                <span class="cocktail_tag"><i class="bi bi-stars"></i> Sealed Gold Can</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="cocktail_card">
+                            <div class="cocktail_img_wrapper mb-3"
+                                style="border-radius: var(--border_radius_md); overflow: hidden; height: 180px;">
+                                <img src="./assets/imgs/Restaurant/Drink3.PNG"
+                                    alt="Amsterdam Tri-Color Matcha Strawberry Cloud"
+                                    style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease;">
+                            </div>
+                            <h3 class="cocktail_title">Matcha Strawberry Cloud</h3>
+                            <div class="cocktail_ingredients">Strawberry Glaze • Froth Coconut Cream • Pure Matcha Foam
+                            </div>
+                            <p class="cocktail_desc">An enigmatic tri-color botanical elixir with delicate strawberry
+                                puree base, velvety coconut cream and crowned with whipped matcha.</p>
+                            <div class="cocktail_footer_meta">
+                                <span class="cocktail_tag"><i class="bi bi-moon"></i> Cloud Layered</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-4" data-aos="fade-up">
+                    <p class="text-muted small">
+                        * Non-alcoholic artisanal mocktails & rare Moroccan tea ceremonies are also available upon
+                        request.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             8. ATMOSPHERE & LIVE SHOW SECTION (FULL WIDTH BANNER)
+             ================================================================== -->
+        <section id="atmosphere" class="atmosphere_section"
+            style="background-image: url('./assets/imgs/Restaurant/Restaurent_Asthetic3.PNG');">
+            <div class="atmosphere_overlay"></div>
+            <div class="container">
+                <div class="atmosphere_content" data-aos="zoom-in" data-aos-duration="1000">
+                    <span class="section_label">MORE THAN A DINNER</span>
+                    <h2 class="atmosphere_title">An Evening You Will Remember</h2>
+                    <div class="gold_divider"></div>
+                    <p class="atmosphere_text">
+                        As the night unfolds in Agadir, Amsterdam Luxury transforms into an opulent dinner-show
+                        spectacle. Savor world-class gastronomy accompanied by mesmerizing live musicians, theatrical
+                        choreography, tableside golden chest rituals, and refined nightlife.
+                    </p>
+                    <a href="#reservation" class="luxury_btn_gold">
+                        <i class="bi bi-stars"></i> Reserve Your Evening
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             9. IMMERSIVE GALLERY SECTION (UNIFORM SQUARE GRID - NO EMPTY SPACES)
+             ================================================================== -->
+        <section id="gallery" class="luxury_section gallery_section">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <span class="section_label">VISUAL SPLENDOR</span>
+                    <h2 class="section_title">Immersive Gallery</h2>
+                    <div class="gold_divider"></div>
+                    <p class="section_subtitle">
+                        A glimpse into the visual ambiance, refined culinary presentations, and vibrant evenings at
+                        Amsterdam Luxury.
+                    </p>
+                </div>
+
+                <!-- Gallery Filter Tabs -->
+                <div class="gallery_filter_wrapper mt-4" data-aos="fade-up" data-aos-delay="100">
+                    <button class="gallery_filter_btn active" data-filter="all">All Highlights</button>
+                    <button class="gallery_filter_btn" data-filter="gastronomy">Fine Gastronomy</button>
+                    <button class="gallery_filter_btn" data-filter="mixology">Mixology</button>
+                    <button class="gallery_filter_btn" data-filter="atmosphere">Atmosphere & Show</button>
+                </div>
+
+                <!-- Uniform Square Gallery Grid (3x3 = 9 Balanced Square Boxes) -->
+                <div class="gallery_grid mt-4" id="gallery_grid_container">
+
+                    <!-- Square Item 1 -->
+                    <div class="gallery_item" data-filter="atmosphere" data-aos="fade-up">
+                        <img src="./assets/imgs/Restaurant/Restaurent_Asthetic2.PNG"
+                            alt="Grand Dining Room with Illuminated Fire Onyx Walls" class="gallery_img" loading="lazy">
+                        <div class="gallery_overlay">
+                            <div class="gallery_zoom_icon"><i class="bi bi-arrows-fullscreen"></i></div>
+                            <h4 class="gallery_caption_title">Grand Dining Room</h4>
+                            <span class="gallery_caption_cat">Atmosphere</span>
+                        </div>
+                    </div>
+
+                    <!-- Square Item 2 -->
+                    <div class="gallery_item" data-filter="gastronomy" data-aos="fade-up" data-aos-delay="60">
+                        <img src="./assets/imgs/Restaurant/Food2.PNG" alt="24K Pure Gold Leaf Wagyu Burger"
+                            class="gallery_img" loading="lazy">
+                        <div class="gallery_overlay">
+                            <div class="gallery_zoom_icon"><i class="bi bi-arrows-fullscreen"></i></div>
+                            <h4 class="gallery_caption_title">24K Gold Wagyu Burger</h4>
+                            <span class="gallery_caption_cat">Gastronomy</span>
+                        </div>
+                    </div>
+
+                    <!-- Square Item 3 -->
+                    <div class="gallery_item" data-filter="mixology" data-aos="fade-up" data-aos-delay="120">
+                        <img src="./assets/imgs/Restaurant/Drink4.PNG" alt="Evening Crystal Glass Mixology"
+                            class="gallery_img" loading="lazy">
+                        <div class="gallery_overlay">
+                            <div class="gallery_zoom_icon"><i class="bi bi-arrows-fullscreen"></i></div>
+                            <h4 class="gallery_caption_title">Artisan Crystal Mixology</h4>
+                            <span class="gallery_caption_cat">Mixology</span>
+                        </div>
+                    </div>
+
+                    <!-- Square Item 4 -->
+                    <div class="gallery_item" data-filter="atmosphere" data-aos="fade-up" data-aos-delay="180">
+                        <img src="./assets/imgs/Restaurant/Restaurent_Asthetic1.PNG"
+                            alt="Floating Illuminated Staircase with AM Emblem" class="gallery_img" loading="lazy">
+                        <div class="gallery_overlay">
+                            <div class="gallery_zoom_icon"><i class="bi bi-arrows-fullscreen"></i></div>
+                            <h4 class="gallery_caption_title">Cantilevered LED Staircase</h4>
+                            <span class="gallery_caption_cat">Atmosphere</span>
+                        </div>
+                    </div>
+
+                    <!-- Square Item 5 -->
+                    <div class="gallery_item" data-filter="gastronomy" data-aos="fade-up" data-aos-delay="240">
+                        <img src="./assets/imgs/Restaurant/Food6.PNG" alt="Glazed Beef Ribs & Chicken Truffle Feast"
+                            class="gallery_img" loading="lazy">
+                        <div class="gallery_overlay">
+                            <div class="gallery_zoom_icon"><i class="bi bi-arrows-fullscreen"></i></div>
+                            <h4 class="gallery_caption_title">Imperial Ribs Banquet</h4>
+                            <span class="gallery_caption_cat">Gastronomy</span>
+                        </div>
+                    </div>
+
+                    <!-- Square Item 6 -->
+                    <div class="gallery_item" data-filter="mixology" data-aos="fade-up" data-aos-delay="300">
+                        <img src="./assets/imgs/Restaurant/Drink2.PNG" alt="Artisanal Berry Ice Coolers in Custom Cans"
+                            class="gallery_img" loading="lazy">
+                        <div class="gallery_overlay">
+                            <div class="gallery_zoom_icon"><i class="bi bi-arrows-fullscreen"></i></div>
+                            <h4 class="gallery_caption_title">Wild Berry Coolers</h4>
+                            <span class="gallery_caption_cat">Mixology</span>
+                        </div>
+                    </div>
+
+                    <!-- Square Item 7 -->
+                    <div class="gallery_item" data-filter="atmosphere" data-aos="fade-up" data-aos-delay="360">
+                        <img src="./assets/imgs/Restaurant/Restaurent_Asthetic3.PNG"
+                            alt="Tableside Glowing Amsterdam Treasure Chest Service" class="gallery_img" loading="lazy">
+                        <div class="gallery_overlay">
+                            <div class="gallery_zoom_icon"><i class="bi bi-arrows-fullscreen"></i></div>
+                            <h4 class="gallery_caption_title">Tableside VIP Ritual</h4>
+                            <span class="gallery_caption_cat">Atmosphere</span>
+                        </div>
+                    </div>
+
+                    <!-- Square Item 8 -->
+                    <div class="gallery_item" data-filter="gastronomy" data-aos="fade-up" data-aos-delay="420">
+                        <img src="./assets/imgs/Restaurant/Sweet1.PNG"
+                            alt="Molten Chocolate Lava Fondant & Vanilla Bean Gelato" class="gallery_img"
+                            loading="lazy">
+                        <div class="gallery_overlay">
+                            <div class="gallery_zoom_icon"><i class="bi bi-arrows-fullscreen"></i></div>
+                            <h4 class="gallery_caption_title">Chocolate Lava Fondant</h4>
+                            <span class="gallery_caption_cat">Gastronomy</span>
+                        </div>
+                    </div>
+
+                    <!-- Square Item 9 -->
+                    <div class="gallery_item" data-filter="atmosphere" data-aos="fade-up" data-aos-delay="480">
+                        <img src="./assets/imgs/Restaurant/Restaurent_Asthetic7.PNG"
+                            alt="VIP Table Perspective & Crystal Chandelier Atrium" class="gallery_img" loading="lazy">
+                        <div class="gallery_overlay">
+                            <div class="gallery_zoom_icon"><i class="bi bi-arrows-fullscreen"></i></div>
+                            <h4 class="gallery_caption_title">Atrium & VIP Table</h4>
+                            <span class="gallery_caption_cat">Atmosphere</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             10. SOCIAL MEDIA / INSTAGRAM SECTION
+             ================================================================== -->
+        <section class="luxury_section social_section">
+            <div class="container">
+                <div class="text-center" data-aos="fade-up">
+                    <span class="section_label">SOCIAL VIBE</span>
+                    <h2 class="section_title">Follow the Amsterdam Experience</h2>
+                    <div class="gold_divider"></div>
+                    <p class="section_subtitle">
+                        Join our digital community. Tag <strong class="text-white">@amsterdamagadir</strong> to be
+                        featured on our official channel.
+                    </p>
+                </div>
+
+                <!-- Instagram Grid -->
+                <div class="instagram_grid" id="social_grid_container">
+
+                    <a href="https://instagram.com/amsterdamagadir" target="_blank" rel="noopener noreferrer"
+                        class="instagram_card" data-aos="fade-up">
+                        <img src="./assets/imgs/Restaurant/Food7.PNG" alt="24K Gold Steak & Terracotta Gambas"
+                            class="instagram_img" loading="lazy">
+                        <div class="instagram_overlay">
+                            <i class="bi bi-instagram instagram_icon"></i>
+                            <span class="instagram_handle">@amsterdamagadir</span>
+                            <span class="small opacity-75"><i class="bi bi-heart-fill text-danger me-1"></i> 2.4k</span>
+                        </div>
+                    </a>
+
+                    <a href="https://instagram.com/amsterdamagadir" target="_blank" rel="noopener noreferrer"
+                        class="instagram_card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="./assets/imgs/Restaurant/Restaurent_Asthetic4.PNG"
+                            alt="Glass Conservatory Salon Lounge" class="instagram_img" loading="lazy">
+                        <div class="instagram_overlay">
+                            <i class="bi bi-instagram instagram_icon"></i>
+                            <span class="instagram_handle">@amsterdamagadir</span>
+                            <span class="small opacity-75"><i class="bi bi-heart-fill text-danger me-1"></i> 1.9k</span>
+                        </div>
+                    </a>
+
+                    <a href="https://instagram.com/amsterdamagadir" target="_blank" rel="noopener noreferrer"
+                        class="instagram_card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="./assets/imgs/Restaurant/Food8.PNG" alt="Tagliatelle Carbonara & Iced Latte"
+                            class="instagram_img" loading="lazy">
+                        <div class="instagram_overlay">
+                            <i class="bi bi-instagram instagram_icon"></i>
+                            <span class="instagram_handle">@amsterdamagadir</span>
+                            <span class="small opacity-75"><i class="bi bi-heart-fill text-danger me-1"></i> 3.8k</span>
+                        </div>
+                    </a>
+
+                    <a href="https://instagram.com/amsterdamagadir" target="_blank" rel="noopener noreferrer"
+                        class="instagram_card" data-aos="fade-up" data-aos-delay="300">
+                        <img src="./assets/imgs/Restaurant/Restaurent_Asthetic5.PNG"
+                            alt="Grand Cascade Crystal Chandelier Atrium" class="instagram_img" loading="lazy">
+                        <div class="instagram_overlay">
+                            <i class="bi bi-instagram instagram_icon"></i>
+                            <span class="instagram_handle">@amsterdamagadir</span>
+                            <span class="small opacity-75"><i class="bi bi-heart-fill text-danger me-1"></i> 2.1k</span>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="text-center mt-5" data-aos="fade-up">
+                    <a href="https://instagram.com/amsterdamagadir" target="_blank" rel="noopener noreferrer"
+                        class="luxury_btn_outline">
+                        <i class="bi bi-instagram"></i> Follow Us on Instagram
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             11. RESERVATION SECTION (VIP BOOKINGS)
+             ================================================================== -->
+        <section id="reservation" class="luxury_section reservation_section">
+            <div class="container">
+
+                <div class="text-center" data-aos="fade-up">
+                    <span class="section_label">VIP TABLE RESERVATION</span>
+                    <h2 class="section_title">Reserve Your Table</h2>
+                    <div class="gold_divider"></div>
+                    <p class="section_subtitle">
+                        Your evening at Amsterdam Luxury begins here. Secure your table for fine dining and our
+                        exclusive live dinner show.
+                    </p>
+                </div>
+
+                <div class="row g-5 mt-4">
+
+                    <!-- Left: Luxury Booking Form -->
+                    <div class="col-lg-8 col-12" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="reservation_card_box">
+                            <form id="reservation_form" novalidate>
+                                <div class="row g-4">
+
+                                    <div class="col-md-6 col-12">
+                                        <label for="res_name" class="form_label_custom">Full Name *</label>
+                                        <input type="text" id="res_name" class="form-control form_control_custom"
+                                            placeholder="e.g. Youssef El Mansouri" required>
+                                    </div>
+
+                                    <div class="col-md-6 col-12">
+                                        <label for="res_phone" class="form_label_custom">Phone Number *</label>
+                                        <input type="tel" id="res_phone" class="form-control form_control_custom"
+                                            placeholder="+212 6XX XX XX XX" required>
+                                    </div>
+
+                                    <div class="col-md-6 col-12">
+                                        <label for="res_email" class="form_label_custom">Email Address</label>
+                                        <input type="email" id="res_email" class="form-control form_control_custom"
+                                            placeholder="client@luxury.com">
+                                    </div>
+
+                                    <div class="col-md-3 col-6">
+                                        <label for="res_date" class="form_label_custom">Date *</label>
+                                        <input type="date" id="res_date" class="form-control form_control_custom"
+                                            required>
+                                    </div>
+
+                                    <div class="col-md-3 col-6">
+                                        <label for="res_time" class="form_label_custom">Time Slot *</label>
+                                        <select id="res_time" class="form-select form_control_custom" required>
+                                            <option value="" disabled selected>Select Time</option>
+                                            <option value="19:00">19:00 — Early Dinner</option>
+                                            <option value="20:30">20:30 — Live Show Seating</option>
+                                            <option value="22:00">22:00 — Prime Evening</option>
+                                            <option value="23:30">23:30 — Midnight Lounge</option>
+                                            <option value="01:00">01:00 — Late Night VIP</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6 col-12">
+                                        <label for="res_guests" class="form_label_custom">Number of Guests *</label>
+                                        <select id="res_guests" class="form-select form_control_custom" required>
+                                            <option value="1">1 Person</option>
+                                            <option value="2" selected>2 Persons (Intimate)</option>
+                                            <option value="3">3 Persons</option>
+                                            <option value="4">4 Persons (Standard VIP)</option>
+                                            <option value="6">6 Persons (VIP Lounge)</option>
+                                            <option value="8+">8+ Persons (Private Salon)</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6 col-12">
+                                        <label for="res_seating" class="form_label_custom">Seating Preference</label>
+                                        <select id="res_seating" class="form-select form_control_custom">
+                                            <option value="Main Dining Hall" selected>Main Dining (Show View)</option>
+                                            <option value="VIP Stagefront Table">VIP Stagefront Table</option>
+                                            <option value="Private Lounge Booth">Private Lounge Booth</option>
+                                            <option value="Terrace Garden">Terrace Garden</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="res_notes" class="form_label_custom">Special Requests /
+                                            Occasion</label>
+                                        <textarea id="res_notes" class="form-control form_control_custom" rows="3"
+                                            placeholder="Birthday, anniversary, dietary requirements or specific requests..."></textarea>
+                                    </div>
+
+                                    <div class="col-12 mt-4">
+                                        <button type="submit" class="luxury_btn_gold w-100">
+                                            <i class="bi bi-envelope-paper-heart"></i> Request a VIP Reservation
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Right: Direct VIP Contacts & WhatsApp -->
+                    <div class="col-lg-4 col-12" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+                        <div class="reservation_direct_info">
+
+                            <div class="direct_info_box">
+                                <span class="direct_info_label">DIRECT PHONE BOOKINGS</span>
+                                <a href="tel:+212528201799" class="direct_info_value">
+                                    <i class="bi bi-telephone me-2 text-warning"></i> +212 5 28 20 17 99
+                                </a>
+                            </div>
+
+                            <div class="direct_info_box">
+                                <span class="direct_info_label">INSTANT WHATSAPP VIP DESK</span>
+                                <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer"
+                                    class="direct_info_value">
+                                    <i class="bi bi-whatsapp me-2 text-success"></i> +212 609 07 05 98
+                                </a>
+                            </div>
+
+                            <div class="direct_info_box">
+                                <span class="direct_info_label">OPENING HOURS</span>
+                                <p class="text-white mb-1 font-monospace">Monday – Sunday</p>
+                                <p class="text-warning mb-0">18:00 PM — 03:00 AM Daily</p>
+                            </div>
+
+                            <div class="mt-4">
+                                <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer"
+                                    class="luxury_btn_whatsapp w-100">
+                                    <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             12. CONTACT & GOOGLE MAPS SECTION
+             ================================================================== -->
+        <section id="contact" class="luxury_section contact_section">
+            <div class="container">
+
+                <div class="text-center" data-aos="fade-up">
+                    <span class="section_label">LOCATION & INQUIRIES</span>
+                    <h2 class="section_title">Visit Amsterdam Luxury</h2>
+                    <div class="gold_divider"></div>
+                    <p class="section_subtitle">
+                        Conveniently located in the premier coastal hub of Agadir, Morocco. Valet parking and VIP
+                        private entrances are available.
+                    </p>
+                </div>
+
+                <div class="row g-4 mt-4">
+
+                    <!-- Contact Details Card -->
+                    <div class="col-lg-5 col-12" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="contact_info_card">
+
+                            <div class="contact_info_item">
+                                <div class="contact_icon_box">
+                                    <i class="bi bi-geo-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="contact_item_title">Address</h4>
+                                    <p class="contact_item_text">
+                                        Amsterdam Luxury Restaurant Agadir<br>
+                                        Résidence Islane GH14, N6, Agadir 80000, Morocco
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="contact_info_item">
+                                <div class="contact_icon_box">
+                                    <i class="bi bi-telephone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="contact_item_title">Telephone & Reservations</h4>
+                                    <p class="contact_item_text">
+                                        Landline: <a href="tel:+212528201799" class="text-warning">+212 5 28 20 17
+                                            99</a><br>
+                                        WhatsApp: <a href="https://wa.me/212609070598" class="text-success">+212 609 07
+                                            05 98</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="contact_info_item">
+                                <div class="contact_icon_box">
+                                    <i class="bi bi-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="contact_item_title">Hours of Service</h4>
+                                    <p class="contact_item_text">
+                                        Dinner Service: 18:00 – 23:00<br>
+                                        Live Show & Lounge: 22:00 – 03:00
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="contact_info_item">
+                                <div class="contact_icon_box">
+                                    <i class="bi bi-share"></i>
+                                </div>
+                                <div>
+                                    <h4 class="contact_item_title">Social Profiles</h4>
+                                    <p class="contact_item_text">
+                                        Instagram: <strong>@amsterdamagadir</strong><br>
+                                        TikTok: <strong>@amsterdamluxury</strong><br>
+                                        Snapchat: <strong>@amsterdamluxe</strong>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Google Maps Interactive Viewport -->
+                    <div class="col-lg-7 col-12" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="map_container">
+                            <iframe class="map_iframe"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439.9476678224432!2d-9.568495118083836!3d30.437585409565937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3b7f7e729b727%3A0xa38ffd8122e86ce6!2sAmsterdam%20Luxury%20Restaurant%20Agadir!5e0!3m2!1sen!2s!4v1787429672536!5m2!1sen!2s"
+                                allowfullscreen="" loading="lazy"
+                                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================================================================
+         13. FOOTER
+         ====================================================================== -->
+    <footer class="luxury_footer">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- Col 1: Brand Info -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <img src="./assets/imgs/Amsterdam_Logo.jpeg" alt="Amsterdam Luxury Logo" class="footer_brand_logo">
+                    <h3 class="footer_brand_title">AMSTERDAM LUXURY</h3>
+                    <p class="footer_brand_desc">
+                        An elevated dining experience where fine gastronomy meets the vibrancy of live dinner shows and
+                        luxurious Moroccan hospitality in Agadir.
+                    </p>
+                    <div class="footer_social_icons">
+                        <a href="https://instagram.com/amsterdamagadir" target="_blank" rel="noopener noreferrer"
+                            class="footer_social_btn" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://tiktok.com/@amsterdamluxury" target="_blank" rel="noopener noreferrer"
+                            class="footer_social_btn" aria-label="TikTok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                            class="footer_social_btn" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer"
+                            class="footer_social_btn" aria-label="WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Navigation Links -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h4 class="footer_heading">Explore</h4>
+                    <ul class="footer_links_list">
+                        <li><a href="index.html" class="footer_link_item">Home</a></li>
+                        <li><a href="about.html" class="footer_link_item">About Us</a></li>
+                        <li><a href="menu.html" class="footer_link_item">Signature Menu</a></li>
+                        <li><a href="dinner-show.html" class="footer_link_item">Dinner Show</a></li>
+                        <li><a href="private-events.html" class="footer_link_item">Private Events</a></li>
+                        <li><a href="gallery.html" class="footer_link_item">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Experience & VIP -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h4 class="footer_heading">Atmosphere</h4>
+                    <ul class="footer_links_list">
+                        <li><a href="dinner-show.html" class="footer_link_item">Live Shows</a></li>
+                        <li><a href="menu.html" class="footer_link_item">Prime Steaks</a></li>
+                        <li><a href="private-events.html" class="footer_link_item">VIP Lounge</a></li>
+                        <li><a href="private-events.html" class="footer_link_item">Private Salons</a></li>
+                        <li><a href="#reservation" class="footer_link_item">Table Bookings</a></li>
+                        <li><a href="contact.html" class="footer_link_item">Valet Concierge</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Newsletter & Exclusive Invitations -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <h4 class="footer_heading">VIP Society</h4>
+                    <p class="footer_newsletter_desc">
+                        Subscribe for exclusive invitations, celebrity dinner shows, and seasonal tasting previews.
+                    </p>
+                    <form class="newsletter_form"
+                        onsubmit="event.preventDefault(); show_luxury_toast('Subscribed Successfully', 'Thank you for joining the Amsterdam Luxury society.'); this.reset();">
+                        <input type="email" class="newsletter_input" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter_submit_btn" aria-label="Subscribe">
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </form>
+                    <small class="text-muted d-block mt-2">We respect your privacy. No spam.</small>
+                </div>
+
+            </div>
+
+            <!-- Bottom Legal Bar -->
+            <div class="footer_bottom_bar">
+                <p class="copyright_text">
+                    &copy; 2026 Amsterdam Luxury. All Rights Reserved. Agadir, Morocco.
+                </p>
+                <div class="legal_links">
+                    <a href="about.html" class="legal_link">Privacy Policy</a>
+                    <a href="about.html" class="legal_link">Terms of Service</a>
+                    <a href="contact.html" class="legal_link">House Policy</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- ======================================================================
+         14. FLOATING ACTION CONTROLS
+         ====================================================================== -->
+    <div class="floating_actions_wrapper">
+        <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer"
+            class="floating_btn floating_btn_whatsapp" aria-label="Chat on WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="https://instagram.com/amsterdamagadir" target="_blank" rel="noopener noreferrer"
+            class="floating_btn floating_btn_instagram" aria-label="Follow Instagram">
+            <i class="bi bi-instagram"></i>
+        </a>
+        <button id="back_to_top_btn" class="floating_btn floating_btn_top" aria-label="Back to top">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- ======================================================================
+         15. LIGHTBOX MODAL (GALLERY)
+         ====================================================================== -->
+    <div class="modal fade modal_backdrop_custom" id="gallery_lightbox_modal" tabindex="-1"
+        aria-labelledby="lightbox_modal_title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content lightbox_modal_content">
+                <div class="modal-header lightbox_modal_header">
+                    <div>
+                        <h4 class="modal-title fs-5 text-white" id="lightbox_modal_title">Gallery Item</h4>
+                        <span class="text-warning small" id="lightbox_modal_category">Category</span>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body lightbox_modal_body">
+                    <img src="./assets/imgs/Amsterdam_BG.jpeg" alt="Amsterdam Luxury Full View" id="lightbox_modal_img"
+                        class="lightbox_img">
+                </div>
+                <div class="modal-footer lightbox_modal_footer">
+                    <span class="text-muted small">Amsterdam Luxury • Agadir, Morocco</span>
+                    <a href="#reservation" class="luxury_btn_gold py-2 px-3 fs-6" data-bs-dismiss="modal">
+                        Reserve a Table
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================================================
+         16. RESERVATION CONFIRMATION MODAL
+         ====================================================================== -->
+    <div class="modal fade modal_backdrop_custom" id="reservation_confirm_modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content lightbox_modal_content p-3 text-center">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <i class="bi bi-check-circle-fill text-warning display-4"></i>
+                    </div>
+                    <h3 class="text-white mb-2">Reservation Prepared</h3>
+                    <p class="text-muted small mb-4">
+                        Thank you, <strong class="text-white" id="confirm_guest_name">Guest</strong>! Your VIP table
+                        request for <strong class="text-white" id="confirm_datetime">Tonight</strong> (<span
+                            id="confirm_guests">2 Guests</span>) is prepared.
+                    </p>
+                    <p class="text-white small mb-4">
+                        Click below to finalize and confirm instantly with our VIP Host on WhatsApp:
+                    </p>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="https://wa.me/212609070598" id="confirm_wa_redirect_btn" target="_blank"
+                            rel="noopener noreferrer" class="luxury_btn_whatsapp">
+                            <i class="bi bi-whatsapp"></i> Confirm on WhatsApp Now
+                        </a>
+                        <button type="button" class="luxury_btn_outline mt-2" data-bs-dismiss="modal">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================================================
+         SCRIPTS
+         ====================================================================== -->
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- AOS Animation Library JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Custom JavaScript Application -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Live Dinner Show & Nightlife | Amsterdam Luxury Agadir</title>
+    <meta name="title" content="Live Dinner Show & Nightlife | Amsterdam Luxury Agadir">
+    <meta name="description"
+        content="Immerse in Agadir's premier live dinner show experience at Amsterdam Luxury. Nightly theatrical performers, live musicians, acrobats, and VIP bottle service.">
+    <meta name="keywords"
+        content="Dinner show Agadir, live entertainment Agadir, nightlife Morocco, luxury dinner show, Amsterdam Luxury spectacle">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://amsterdamluxury.ma/dinner-show.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amsterdamluxury.ma/dinner-show.html">
+    <meta property="og:title" content="Live Dinner Show & Nightlife | Amsterdam Luxury Agadir">
+    <meta property="og:description" content="Agadir's premier live dinner show experience at Amsterdam Luxury.">
+    <meta property="og:image" content="./assets/imgs/Menu9.jpeg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="./assets/imgs/Amsterdam_Logo.jpeg">
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- AOS Animation Library CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+    <!-- Custom Luxury Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ======================================================================
+         1. HEADER & NAVBAR
+         ====================================================================== -->
+    <header class="header_navbar">
+        <div class="container-fluid px-lg-5 px-3">
+            <div class="d-flex align-items-center justify-content-between">
+
+                <!-- Brand / Logo -->
+                <a href="index.html" class="brand_logo_link" aria-label="Amsterdam Luxury Homepage">
+                    <img src="./assets/imgs/Amsterdam_Logo.jpeg" alt="Amsterdam Luxury Logo" class="brand_logo_img">
+                    <div class="brand_text_box">
+                        <span class="brand_title">AMSTERDAM</span>
+                        <span class="brand_tagline">LUXURY • AGADIR</span>
+                    </div>
+                </a>
+
+                <!-- Right Action Controls: Reserve Table + Menu Toggle -->
+                <div class="d-flex align-items-center gap-3">
+                    <a href="index.html#reservation" class="luxury_btn_gold header_reserve_btn">
+                        <i class="bi bi-calendar2-check"></i> Reserve a Table
+                    </a>
+
+                    <!-- Luxury Menu Toggle Button -->
+                    <button class="header_menu_toggle_btn" id="header_menu_toggle_btn"
+                        aria-label="Toggle navigation menu">
+                        <span class="toggle_bars_icon">
+                            <span class="bar bar_top"></span>
+                            <span class="bar bar_mid"></span>
+                            <span class="bar bar_bot"></span>
+                        </span>
+                        <span class="toggle_btn_label">MENU</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Luxury Sidebar Navigation Drawer -->
+    <div class="drawer_backdrop"></div>
+    <aside class="luxury_sidebar_drawer" aria-label="Main Navigation Sidebar">
+        <div class="drawer_header">
+            <a href="index.html" class="drawer_brand_box">
+                <img src="./assets/imgs/Amsterdam_Logo.jpeg" alt="Amsterdam Luxury" class="drawer_brand_logo">
+                <div>
+                    <span class="drawer_brand_title">AMSTERDAM LUXURY</span>
+                    <span class="drawer_brand_sub">RESTAURANT • LOUNGE • SHOW</span>
+                </div>
+            </a>
+            <button class="drawer_close_btn" aria-label="Close navigation menu">
+                <i class="bi bi-x-lg"></i> CLOSE
+            </button>
+        </div>
+
+        <div class="drawer_body_content">
+            <ul class="drawer_links">
+                <li>
+                    <a href="index.html" class="drawer_link">
+                        <span class="drawer_link_num">01</span>
+                        <span class="drawer_link_text">Home</span>
+                        <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" class="drawer_link">
+                        <span class="drawer_link_num">02</span>
+                        <span class="drawer_link_text">About Us</span>
+                        <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="menu.html" class="drawer_link">
+                        <span class="drawer_link_num">03</span>
+                        <span class="drawer_link_text">Signature Menu</span>
+                        <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="dinner-show.html" class="drawer_link active">
+                        <span class="drawer_link_num">04</span>
+                        <span class="drawer_link_text">Live Dinner Show</span>
+                        <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="private-events.html" class="drawer_link">
+                        <span class="drawer_link_num">05</span>
+                        <span class="drawer_link_text">Private Events</span>
+                        <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="gallery.html" class="drawer_link">
+                        <span class="drawer_link_num">06</span>
+                        <span class="drawer_link_text">Visual Gallery</span>
+                        <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html" class="drawer_link">
+                        <span class="drawer_link_num">07</span>
+                        <span class="drawer_link_text">Contact & Location</span>
+                        <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="drawer_info_box">
+                <div class="drawer_info_item">
+                    <i class="bi bi-geo-alt text-warning"></i>
+                    <span>Résidence Islane GH14, N6, Agadir 80000, Morocco</span>
+                </div>
+                <div class="drawer_info_item">
+                    <i class="bi bi-clock text-warning"></i>
+                    <span>Nightly: 18:00 – 03:00 (Dinner & Show)</span>
+                </div>
+                <div class="drawer_info_item">
+                    <i class="bi bi-telephone text-warning"></i>
+                    <span>+212 5 28 20 17 99</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="drawer_footer">
+            <div class="d-flex flex-column gap-2 mb-3">
+                <a href="index.html#reservation" class="luxury_btn_gold w-100 text-center">
+                    <i class="bi bi-calendar-check"></i> Book VIP Table
+                </a>
+                <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer"
+                    class="luxury_btn_whatsapp w-100 text-center">
+                    <i class="bi bi-whatsapp"></i> Chat on WhatsApp Concierge
+                </a>
+            </div>
+
+            <div class="drawer_social_row">
+                <a href="https://instagram.com/amsterdamagadir" target="_blank" rel="noopener noreferrer"
+                    class="drawer_social_icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://tiktok.com/@amsterdamluxury" target="_blank" rel="noopener noreferrer"
+                    class="drawer_social_icon" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="drawer_social_icon"
+                    aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer"
+                    class="drawer_social_icon" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ======================================================================
+         2. PAGE HEADER BANNER
+         ====================================================================== -->
+    <section class="page_header_section"
+        style="background-image: url('./assets/imgs/Restaurant/Restaurent_Asthetic2.PNG');">
+        <div class="page_header_overlay"></div>
+        <div class="container">
+            <div class="page_header_content" data-aos="fade-up">
+                <div class="page_breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Live Dinner Show</span>
+                </div>
+                <h1 class="page_header_title">Theatrical Dinner Show</h1>
+                <p class="page_header_desc">
+                    Where fine gastronomy meets electric stage performances. Savor signature dry-aged cuts while
+                    international vocalists, live instrumentalists, and acrobats take center stage.
+                </p>
+                <div class="mt-4">
+                    <a href="#schedule" class="luxury_btn_gold me-3">
+                        <i class="bi bi-clock"></i> View Show Schedule
+                    </a>
+                    <a href="index.html#reservation" class="luxury_btn_outline">
+                        <i class="bi bi-stars"></i> Book Stagefront Table
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         3. THE EXPERIENCE OVERVIEW
+         ====================================================================== -->
+    <section class="luxury_section about_section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6 col-12" data-aos="fade-right">
+                    <span class="section_label">THE SENSORY JOURNEY</span>
+                    <h2 class="section_title">A Night of Unrivaled Magnetism</h2>
+                    <div class="gold_divider_left"></div>
+                    <p class="about_lead_text">
+                        Every evening at Amsterdam Luxury is carefully staged. The atmosphere progresses smoothly from
+                        an intimate fine dining ambiance to an exhilarating theatrical spectacle.
+                    </p>
+                    <p>
+                        Our resident international performers, guest saxophonists, aerial acrobats, and soul vocalists
+                        weave through the venue, creating an immersive 360-degree entertainment sensation that makes
+                        every VIP celebration unforgettable.
+                    </p>
+
+                    <div class="row g-3 mt-4">
+                        <div class="col-6">
+                            <div class="about_feature_mini_card">
+                                <div class="mini_card_icon"><i class="bi bi-music-note-beamed"></i></div>
+                                <h4 class="mini_card_title">Live Acts</h4>
+                                <p class="mini_card_sub">Saxophone, Violin & Live Vocals</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="about_feature_mini_card">
+                                <div class="mini_card_icon"><i class="bi bi-disc"></i></div>
+                                <h4 class="mini_card_title">Resident DJ</h4>
+                                <p class="mini_card_sub">Deep House & Mediterranean Beats</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12" data-aos="fade-left">
+                    <div class="about_image_frame">
+                        <img src="./assets/imgs/Restaurant/Restaurent_Asthetic3.PNG"
+                            alt="Amsterdam Luxury Tableside Experience" class="about_main_img">
+                        <div class="about_floating_badge">
+                            <span class="badge_number">18:00 – 03:00</span>
+                            <span class="badge_text">Nightly Show & Lounge</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         4. WEEKLY SHOW SCHEDULE
+         ====================================================================== -->
+    <section id="schedule" class="luxury_section experience_section">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <span class="section_label">THE TIMELINE</span>
+                <h2 class="section_title">Weekly Performance Lineup</h2>
+                <div class="gold_divider"></div>
+                <p class="section_subtitle">
+                    Experience dynamic show themes curated throughout the week in Agadir.
+                </p>
+            </div>
+
+            <div class="row g-4 mt-4">
+
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="100">
+                    <div class="show_schedule_card">
+                        <span class="show_time_badge">WEDNESDAY & THURSDAY</span>
+                        <h3 class="text-white fs-4 mb-2">Acoustic Senses & Velvet Jazz</h3>
+                        <p class="text-muted small mb-3">Live saxophone serenades, smooth jazz duos, and ambient dining
+                            grooves paired with our prime steaks.</p>
+                        <div class="border-top border-secondary pt-3 text-warning small">
+                            <i class="bi bi-clock me-1"></i> Seating: 19:30 | Show: 21:00
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
+                    <div class="show_schedule_card"
+                        style="border-color: var(--primary_color); background: var(--dark_surface);">
+                        <span class="show_time_badge"
+                            style="background: rgba(217, 161, 90, 0.25); color: var(--gold_light);">FRIDAY & SATURDAY —
+                            PRIME GALA</span>
+                        <h3 class="text-white fs-4 mb-2">The Grand Theatrical Spectacle</h3>
+                        <p class="text-muted small mb-3">Full dinner show production: acrobatic feats, vocal diva
+                            performances, percussion spectacles, and DJ after-hours.</p>
+                        <div class="border-top border-secondary pt-3 text-warning small">
+                            <i class="bi bi-clock me-1"></i> Seating: 20:30 | Show: 22:00
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
+                    <div class="show_schedule_card">
+                        <span class="show_time_badge">SUNDAY NIGHT</span>
+                        <h3 class="text-white fs-4 mb-2">Oriental Chill & Desert Gold</h3>
+                        <p class="text-muted small mb-3">Fusing contemporary Moroccan rhythms with Mediterranean deep
+                            lounge sounds and artisanal tea rituals.</p>
+                        <div class="border-top border-secondary pt-3 text-warning small">
+                            <i class="bi bi-clock me-1"></i> Seating: 19:00 | Show: 20:30
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         5. VIP BOTTLE SERVICE & TABLE PACKAGES (NO PRICING)
+         ====================================================================== -->
+    <section class="luxury_section menu_section">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <span class="section_label">VIP EXPERIENCES</span>
+                <h2 class="section_title">Dinner Show VIP Packages</h2>
+                <div class="gold_divider"></div>
+                <p class="section_subtitle">
+                    Elevate your evening with priority stagefront positioning, dedicated concierge hosts, and tailored
+                    gastronomy.
+                </p>
+            </div>
+
+            <div class="row g-4 mt-4">
+
+                <!-- Package 1 -->
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up">
+                    <div class="vip_package_card">
+                        <h3 class="text-white fs-4">Gold Table Package</h3>
+                        <span class="text-muted small">Up to 4 Guests</span>
+                        <div class="package_experience_tag"><i class="bi bi-stars text-warning me-1"></i> Dining Lounge
+                            Experience</div>
+                        <ul class="package_features">
+                            <li><i class="bi bi-check2-circle"></i> Prime Dining Room Seating</li>
+                            <li><i class="bi bi-check2-circle"></i> 3-Course Signature Tasting Menu</li>
+                            <li><i class="bi bi-check2-circle"></i> Welcome Artisanal Cocktails</li>
+                            <li><i class="bi bi-check2-circle"></i> Dedicated Table Service</li>
+                        </ul>
+                        <a href="index.html#reservation" class="luxury_btn_outline w-100">Inquire VIP Table</a>
+                    </div>
+                </div>
+
+                <!-- Package 2 (Featured) -->
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="100">
+                    <div class="vip_package_card"
+                        style="border-color: var(--primary_color); background: rgba(23, 18, 15, 0.95);">
+                        <span
+                            class="badge bg-warning text-dark position-absolute top-0 start-50 translate-middle px-3 py-1">MOST
+                            REQUESTED</span>
+                        <h3 class="text-white fs-4 mt-2">Royal Stagefront VIP</h3>
+                        <span class="text-muted small">Up to 6 Guests</span>
+                        <div class="package_experience_tag"><i class="bi bi-gem text-warning me-1"></i> Stagefront Prime
+                            Table</div>
+                        <ul class="package_features">
+                            <li><i class="bi bi-check2-circle"></i> Front Row Direct Stage Table</li>
+                            <li><i class="bi bi-check2-circle"></i> Imperial Tomahawk Steak Feast</li>
+                            <li><i class="bi bi-check2-circle"></i> Premium Bottle of Choice + Mixers</li>
+                            <li><i class="bi bi-check2-circle"></i> 24K Gold Dessert Experience</li>
+                            <li><i class="bi bi-check2-circle"></i> Private Valet Parking Included</li>
+                        </ul>
+                        <a href="index.html#reservation" class="luxury_btn_gold w-100">Book Stagefront VIP</a>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
+                    <div class="vip_package_card">
+                        <h3 class="text-white fs-4">Imperial Salon Booth</h3>
+                        <span class="text-muted small">Up to 10 Guests</span>
+                        <div class="package_experience_tag"><i class="bi bi-shield-check text-warning me-1"></i> Private
+                            Elevated Lounge</div>
+                        <ul class="package_features">
+                            <li><i class="bi bi-check2-circle"></i> Private Elevated VIP Booth</li>
+                            <li><i class="bi bi-check2-circle"></i> Chef's Custom Multi-Course Menu</li>
+                            <li><i class="bi bi-check2-circle"></i> 2 Premium Bottles + Champagne</li>
+                            <li><i class="bi bi-check2-circle"></i> Dedicated Personal VIP Host</li>
+                            <li><i class="bi bi-check2-circle"></i> Priority Valet & Fast Entry</li>
+                        </ul>
+                        <a href="index.html#reservation" class="luxury_btn_outline w-100">Reserve Salon Booth</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         6. CTA BANNER
+         ====================================================================== -->
+    <section class="atmosphere_section"
+        style="background-image: url('./assets/imgs/Restaurant/Restaurent_Asthetic5.PNG');">
+        <div class="atmosphere_overlay"></div>
+        <div class="container">
+            <div class="atmosphere_content" data-aos="zoom-in">
+                <span class="section_label">SECURE YOUR SEAT</span>
+                <h2 class="atmosphere_title">An Electrifying Night Awaits in Agadir</h2>
+                <div class="gold_divider"></div>
+                <p class="atmosphere_text">
+                    Reservations for the Live Dinner Show fill up rapidly on weekends. Secure your VIP table today.
+                </p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="index.html#reservation" class="luxury_btn_gold">
+                        <i class="bi bi-calendar2-check"></i> Book Dinner Show Table
+                    </a>
+                    <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer"
+                        class="luxury_btn_whatsapp">
+                        <i class="bi bi-whatsapp"></i> Instant WhatsApp VIP
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         7. FOOTER
+         ====================================================================== -->
+    <footer class="luxury_footer">
+        <div class="container">
+            <div class="row g-5">
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <img src="./assets/imgs/Amsterdam_Logo.jpeg" alt="Amsterdam Luxury Logo" class="footer_brand_logo">
+                    <h3 class="footer_brand_title">AMSTERDAM LUXURY</h3>
+                    <p class="footer_brand_desc">
+                        An elevated dining experience where fine gastronomy meets the vibrancy of live dinner shows and
+                        luxurious Moroccan hospitality in Agadir.
+                    </p>
+                    <div class="footer_social_icons">
+                        <a href="https://instagram.com/amsterdamagadir" target="_blank" rel="noopener noreferrer"
+                            class="footer_social_btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://tiktok.com/@amsterdamluxury" target="_blank" rel="noopener noreferrer"
+                            class="footer_social_btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                            class="footer_social_btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer"
+                            class="footer_social_btn" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h4 class="footer_heading">Explore</h4>
+                    <ul class="footer_links_list">
+                        <li><a href="index.html" class="footer_link_item">Home</a></li>
+                        <li><a href="about.html" class="footer_link_item">About Us</a></li>
+                        <li><a href="menu.html" class="footer_link_item">Signature Menu</a></li>
+                        <li><a href="dinner-show.html" class="footer_link_item">Dinner Show</a></li>
+                        <li><a href="private-events.html" class="footer_link_item">Private Events</a></li>
+                        <li><a href="gallery.html" class="footer_link_item">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h4 class="footer_heading">Atmosphere</h4>
+                    <ul class="footer_links_list">
+                        <li><a href="dinner-show.html" class="footer_link_item">Live Shows</a></li>
+                        <li><a href="menu.html" class="footer_link_item">Prime Steaks</a></li>
+                        <li><a href="private-events.html" class="footer_link_item">VIP Lounge</a></li>
+                        <li><a href="private-events.html" class="footer_link_item">Private Salons</a></li>
+                        <li><a href="index.html#reservation" class="footer_link_item">Table Bookings</a></li>
+                        <li><a href="contact.html" class="footer_link_item">Valet Concierge</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <h4 class="footer_heading">VIP Society</h4>
+                    <p class="footer_newsletter_desc">
+                        Subscribe for exclusive invitations, celebrity dinner shows, and seasonal tasting previews.
+                    </p>
+                    <form class="newsletter_form"
+                        onsubmit="event.preventDefault(); show_luxury_toast('Subscribed Successfully', 'Thank you for joining the Amsterdam Luxury society.'); this.reset();">
+                        <input type="email" class="newsletter_input" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter_submit_btn" aria-label="Subscribe"><i
+                                class="bi bi-arrow-right"></i></button>
+                    </form>
+                    <small class="text-muted d-block mt-2">We respect your privacy. No spam.</small>
+                </div>
+
+            </div>
+
+            <div class="footer_bottom_bar">
+                <p class="copyright_text">&copy; 2026 Amsterdam Luxury. All Rights Reserved. Agadir, Morocco.</p>
+                <div class="legal_links">
+                    <a href="about.html" class="legal_link">Privacy Policy</a>
+                    <a href="about.html" class="legal_link">Terms of Service</a>
+                    <a href="contact.html" class="legal_link">House Policy</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Floating Actions -->
+    <div class="floating_actions_wrapper">
+        <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer"
+            class="floating_btn floating_btn_whatsapp" aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://instagram.com/amsterdamagadir" target="_blank" rel="noopener noreferrer"
+            class="floating_btn floating_btn_instagram" aria-label="Follow Instagram"><i
+                class="bi bi-instagram"></i></a>
+        <button id="back_to_top_btn" class="floating_btn floating_btn_top" aria-label="Back to top"><i
+                class="bi bi-arrow-up"></i></button>
+    </div>
+
+    <!-- Bootstrap 5.3 JS Bundle & AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

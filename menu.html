@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Signature Menu | Amsterdam Luxury Restaurant Agadir</title>
+    <meta name="title" content="Signature Menu | Amsterdam Luxury Restaurant Agadir">
+    <meta name="description"
+        content="Explore the full culinary repertoire at Amsterdam Luxury in Agadir. Master cut dry-aged steaks, artisan burgers, delicate Mediterranean appetizers, and gold-infused mixology.">
+    <meta name="keywords"
+        content="Amsterdam Luxury menu, Agadir restaurant menu, dry aged steak Agadir, wagyu burger Morocco, halal cocktails Agadir">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://amsterdamluxury.ma/menu.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="restaurant.menu">
+    <meta property="og:url" content="https://amsterdamluxury.ma/menu.html">
+    <meta property="og:title" content="Signature Menu | Amsterdam Luxury Restaurant Agadir">
+    <meta property="og:description" content="Explore the full culinary repertoire at Amsterdam Luxury in Agadir.">
+    <meta property="og:image" content="./assets/imgs/Menu1.jpeg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="./assets/imgs/Amsterdam_Logo.jpeg">
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- AOS Animation Library CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+    <!-- Custom Luxury Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ======================================================================
+         1. HEADER & NAVBAR
+         ====================================================================== -->
+    <header class="header_navbar">
+        <div class="container-fluid px-lg-5 px-3">
+            <div class="d-flex align-items-center justify-content-between">
+
+                <!-- Brand / Logo -->
+                <a href="index.html" class="brand_logo_link" aria-label="Amsterdam Luxury Homepage">
+                    <img src="./assets/imgs/Amsterdam_Logo.jpeg" alt="Amsterdam Luxury Logo" class="brand_logo_img">
+                    <div class="brand_text_box">
+                        <span class="brand_title">AMSTERDAM</span>
+                        <span class="brand_tagline">LUXURY • AGADIR</span>
+                    </div>
+                </a>
+
+                <!-- Right Action Controls: Reserve Table + Menu Toggle -->
+                <div class="d-flex align-items-center gap-3">
+                    <a href="index.html#reservation" class="luxury_btn_gold header_reserve_btn">
+                        <i class="bi bi-calendar2-check"></i> Reserve a Table
+                    </a>
+
+                    <!-- Luxury Menu Toggle Button -->
+                    <button class="header_menu_toggle_btn" id="header_menu_toggle_btn"
+                        aria-label="Toggle navigation menu">
+                        <span class="toggle_bars_icon">
+                            <span class="bar bar_top"></span>
+                            <span class="bar bar_mid"></span>
+                            <span class="bar bar_bot"></span>
+                        </span>
+                        <span class="toggle_btn_label">MENU</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Luxury Sidebar Navigation Drawer -->
+    <div class="drawer_backdrop"></div>
+    <aside class="luxury_sidebar_drawer" aria-label="Main Navigation Sidebar">
+        <div class="drawer_header">
+            <a href="index.html" class="drawer_brand_box">
+                <img src="./assets/imgs/Amsterdam_Logo.jpeg" alt="Amsterdam Luxury" class="drawer_brand_logo">
+                <div>
+                    <span class="drawer_brand_title">AMSTERDAM LUXURY</span>
+                    <span class="drawer_brand_sub">RESTAURANT • LOUNGE • SHOW</span>
+                </div>
+            </a>
+            <button class="drawer_close_btn" aria-label="Close navigation menu">
+                <i class="bi bi-x-lg"></i> CLOSE
+            </button>
+        </div>
+
+        <div class="drawer_body_content">
+            <ul class="drawer_links">
+                <li>
+                    <a href="index.html" class="drawer_link">
+                        <span class="drawer_link_num">01</span>
+                        <span class="drawer_link_text">Home</span>
+                        <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" class="drawer_link">
+                        <span class="drawer_link_num">02</span>
+                        <span class="drawer_link_text">About Us</span>
+                        <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="menu.html" class="drawer_link active">
+                        <span class="drawer_link_num">03</span>
+                        <span class="drawer_link_text">Signature Menu</span>
+                        <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="dinner-show.html" class="drawer_link">
+                        <span class="drawer_link_num">04</span>
+                        <span class="drawer_link_text">Live Dinner Show</span>
+                        <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="private-events.html" class="drawer_link">
+                        <span class="drawer_link_num">05</span>
+                        <span class="drawer_link_text">Private Events</span>
+                        <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="gallery.html" class="drawer_link">
+                        <span class="drawer_link_num">06</span>
+                        <span class="drawer_link_text">Visual Gallery</span>
+                        <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html" class="drawer_link">
+                        <span class="drawer_link_num">07</span>
+                        <span class="drawer_link_text">Contact & Location</span>
+                        <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="drawer_info_box">
+                <div class="drawer_info_item">
+                    <i class="bi bi-geo-alt text-warning"></i>
+                    <span>Résidence Islane GH14, N6, Agadir 80000, Morocco</span>
+                </div>
+                <div class="drawer_info_item">
+                    <i class="bi bi-clock text-warning"></i>
+                    <span>Nightly: 18:00 – 03:00 (Dinner & Show)</span>
+                </div>
+                <div class="drawer_info_item">
+                    <i class="bi bi-telephone text-warning"></i>
+                    <span>+212 5 28 20 17 99</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="drawer_footer">
+            <div class="d-flex flex-column gap-2 mb-3">
+                <a href="index.html#reservation" class="luxury_btn_gold w-100 text-center">
+                    <i class="bi bi-calendar-check"></i> Book VIP Table
+                </a>
+                <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer"
+                    class="luxury_btn_whatsapp w-100 text-center">
+                    <i class="bi bi-whatsapp"></i> Chat on WhatsApp Concierge
+                </a>
+            </div>
+
+            <div class="drawer_social_row">
+                <a href="https://instagram.com/amsterdamagadir" target="_blank" rel="noopener noreferrer"
+                    class="drawer_social_icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://tiktok.com/@amsterdamluxury" target="_blank" rel="noopener noreferrer"
+                    class="drawer_social_icon" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="drawer_social_icon"
+                    aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer"
+                    class="drawer_social_icon" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ======================================================================
+         2. PAGE HEADER BANNER
+         ====================================================================== -->
+    <section class="page_header_section" style="background-image: url('./assets/imgs/Restaurant/Food3.PNG');">
+        <div class="page_header_overlay"></div>
+        <div class="container">
+            <div class="page_header_content" data-aos="fade-up">
+                <div class="page_breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Gastronomy Menu</span>
+                </div>
+                <h1 class="page_header_title">À La Carte & Tasting Menu</h1>
+                <p class="page_header_desc">
+                    An uncompromising culinary repertoire highlighting master cut dry-aged steaks, artisan burgers,
+                    delicate Mediterranean appetizers, and gold-infused mixology.
+                </p>
+                <div class="mt-4">
+                    <a href="index.html#reservation" class="luxury_btn_gold me-3">
+                        <i class="bi bi-calendar-check"></i> Book a Table
+                    </a>
+                    <button class="luxury_btn_outline"
+                        onclick="show_luxury_toast('Tasting Menu', 'Our seasonal gastronomy selections are prepared daily by the Executive Chef.');">
+                        <i class="bi bi-stars"></i> Chef Recommendations
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         3. FULL DETAILED MENU SECTIONS (NO PRICING)
+         ====================================================================== -->
+    <section class="luxury_section menu_section">
+        <div class="container">
+
+            <!-- Category 1: Starters & Cold Bar -->
+            <div class="menu_category_block" data-aos="fade-up">
+                <div class="menu_category_heading">
+                    <span><i class="bi bi-flower1 me-2"></i> Starters & Cold Creations</span>
+                    <small class="text-muted fs-6">Entrées & Salades</small>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-12">
+                        <div class="menu_list_item">
+                            <div class="menu_list_header">
+                                <h3 class="menu_list_title">Burrata Di Bufala Garden</h3>
+                                <span class="menu_list_tag"><i class="bi bi-patch-check"></i> Fresh & Organic</span>
+                            </div>
+                            <p class="menu_list_desc">Fresh imported Italian burrata, heirloom cherry tomatoes,
+                                cold-pressed Atlas olive oil, 12-year balsamic reduction and toasted pine nuts.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="menu_list_item">
+                            <div class="menu_list_header">
+                                <h3 class="menu_list_title">Golden Crispy Truffle Croquettes</h3>
+                                <span class="menu_list_tag"><i class="bi bi-stars"></i> Truffle Velouté</span>
+                            </div>
+                            <p class="menu_list_desc">Slow-braised beef confit croquettes with black truffle velouté and
+                                house-smoked paprika garlic emulsion.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="menu_list_item">
+                            <div class="menu_list_header">
+                                <h3 class="menu_list_title">Wagyu Beef Carpaccio</h3>
+                                <span class="menu_list_tag"><i class="bi bi-gem"></i> A5 Wagyu</span>
+                            </div>
+                            <p class="menu_list_desc">Paper-thin slices of A5 Wagyu, shaved Parmigiano Reggiano, wild
+                                baby arugula, caper berries, and white truffle dressing.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="menu_list_item">
+                            <div class="menu_list_header">
+                                <h3 class="menu_list_title">Gambas Al Ajillo Royal</h3>
+                                <span class="menu_list_tag"><i class="bi bi-fire"></i> Sautéed King Prawns</span>
+                            </div>
+                            <p class="menu_list_desc">Atlantic king tiger prawns sautéed in extra virgin olive oil,
+                                garlic confit, chili flakes, and fresh coriander.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 2: Master Butcher Steaks & Prime Cuts -->
+            <div class="menu_category_block mt-5" data-aos="fade-up">
+                <div class="menu_category_heading">
+                    <span><i class="bi bi-fire me-2"></i> Prime Dry-Aged Steaks & Butchery</span>
+                    <small class="text-muted fs-6">Les Viandes d'Exception</small>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-12">
+                        <div class="menu_list_item">
+                            <div class="menu_list_header">
+                                <h3 class="menu_list_title">Amsterdam Signature Ribeye (400g)</h3>
+                                <span class="menu_list_tag"><i class="bi bi-stars"></i> 45-Day Dry Aged</span>
+                            </div>
+                            <p class="menu_list_desc">45-day Himalayan salt dry-aged ribeye steak, seared over aromatic
+                                charcoal, served with roasted bone marrow herb butter and truffle jus.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="menu_list_item">
+                            <div class="menu_list_header">
+                                <h3 class="menu_list_title">Prime Beef Tenderloin Filet Mignon (250g)</h3>
+                                <span class="menu_list_tag"><i class="bi bi-award"></i> Ultra-Tender Cut</span>
+                            </div>
+                            <p class="menu_list_desc">Ultra-tender grass-fed filet mignon, served with seasonal glazed
+                                baby vegetables and Madagascar green peppercorn sauce.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="menu_list_item">
+                            <div class="menu_list_header">
+                                <h3 class="menu_list_title">The Imperial Tomahawk (1.2kg — For Two)</h3>
+                                <span class="menu_list_tag"><i class="bi bi-gem"></i> Tableside Carving</span>
+                            </div>
+                            <p class="menu_list_desc">Show-stopping long-bone prime rib steak, carved tableside with
+                                artisanal sea salt flakes, chimichurri, and wild mushroom sauté.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="menu_list_item">
+                            <div class="menu_list_header">
+                                <h3 class="menu_list_title">Australian Black Angus Striploin (350g)</h3>
+                                <span class="menu_list_tag"><i class="bi bi-patch-check"></i> Marble Score 4+</span>
+                            </div>
+                            <p class="menu_list_desc">Marble score 4+ striploin, dry-rubbed with signature spices,
+                                grilled to medium rare perfection over olive wood charcoal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 3: Signature Burgers & Mains -->
+            <div class="menu_category_block mt-5" data-aos="fade-up">
+                <div class="menu_category_heading">
+                    <span><i class="bi bi-star-fill me-2"></i> Gourmet Burgers & Main Courses</span>
+                    <small class="text-muted fs-6">Plats Signatures</small>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-12">
+                        <div class="menu_list_item">
+                            <div class="menu_list_header">
+                                <h3 class="menu_list_title">Amsterdam Luxury Wagyu Burger</h3>
+                                <span class="menu_list_tag"><i class="bi bi-gem"></i> Gilded Brioche</span>
+                            </div>
+                            <p class="menu_list_desc">A5 Wagyu patty, melted smoked provolone, caramelized shallots,
+                                baby arugula, truffle mayo, served in gilded artisan brioche with truffle fries.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="menu_list_item">
+                            <div class="menu_list_header">
+                                <h3 class="menu_list_title">Golden Delice Gratin Skillet</h3>
+                                <span class="menu_list_tag"><i class="bi bi-fire"></i> Aged Gruyère</span>
+                            </div>
+                            <p class="menu_list_desc">Oven-baked potato gratin with aged Gruyère, crème fraîche, sautéed
+                                wild porcini mushrooms, and garden herbs.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="menu_list_item">
+                            <div class="menu_list_header">
+                                <h3 class="menu_list_title">Slow-Braised Royal Lamb Shank</h3>
+                                <span class="menu_list_tag"><i class="bi bi-stars"></i> 12-Hour Braised</span>
+                            </div>
+                            <p class="menu_list_desc">12-hour braised Moroccan lamb shank in a rich saffron-infused
+                                reduction with caramelized apricots and toasted almonds.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="menu_list_item">
+                            <div class="menu_list_header">
+                                <h3 class="menu_list_title">Pan-Seared Atlantic Sea Bass</h3>
+                                <span class="menu_list_tag"><i class="bi bi-water"></i> Wild Catch</span>
+                            </div>
+                            <p class="menu_list_desc">Crispy-skinned fresh wild sea bass filet, creamy saffron risotto,
+                                charred asparagus, and citrus beurre blanc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 4: Decadent Desserts & Sweet Artistry -->
+            <div class="menu_category_block mt-5" data-aos="fade-up">
+                <div class="menu_category_heading">
+                    <span><i class="bi bi-gem me-2"></i> Decadent Desserts & Sweet Art</span>
+                    <small class="text-muted fs-6">Douceurs & Desserts</small>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-12">
+                        <div class="menu_list_item">
+                            <div class="menu_list_header">
+                                <h3 class="menu_list_title">Amsterdam 24K Golden Dome</h3>
+                                <span class="menu_list_tag"><i class="bi bi-stars"></i> 24K Gold Leaf</span>
+                            </div>
+                            <p class="menu_list_desc">Valrhona 70% dark chocolate dome dusted with pure 24K edible gold,
+                                hazelnut praline core, melted by warm salted caramel tableside.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="menu_list_item">
+                            <div class="menu_list_header">
+                                <h3 class="menu_list_title">Madagascar Vanilla Bean Mille-Feuille</h3>
+                                <span class="menu_list_tag"><i class="bi bi-flower1"></i> Tahitian Vanilla</span>
+                            </div>
+                            <p class="menu_list_desc">Caramelized puff pastry layers filled with velvety Tahitian
+                                vanilla bean cream and raspberry coulis.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="menu_list_item">
+                            <div class="menu_list_header">
+                                <h3 class="menu_list_title">Pistachio & Orange Blossom Fondant</h3>
+                                <span class="menu_list_tag"><i class="bi bi-fire"></i> Warm Molten Core</span>
+                            </div>
+                            <p class="menu_list_desc">Warm molten Sicilian pistachio cake with fragrant Moroccan orange
+                                blossom essence and artisan mastic ice cream.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="menu_list_item">
+                            <div class="menu_list_header">
+                                <h3 class="menu_list_title">Fresh Exotic Fruit Platter</h3>
+                                <span class="menu_list_tag"><i class="bi bi-sun"></i> Seasonal Harvest</span>
+                            </div>
+                            <p class="menu_list_desc">Artfully sliced seasonal dragon fruit, passion fruit, mango,
+                                berries, with mint sorbet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 5: Signature Mixology & Mocktails -->
+            <div class="menu_category_block mt-5" data-aos="fade-up">
+                <div class="menu_category_heading">
+                    <span><i class="bi bi-cup-straw me-2"></i> Signature Mixology & Crafted Elixirs</span>
+                    <small class="text-muted fs-6">Cocktails & Mocktails</small>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-12">
+                        <div class="menu_list_item">
+                            <div class="menu_list_header">
+                                <h3 class="menu_list_title">Amsterdam Sunset</h3>
+                                <span class="menu_list_tag"><i class="bi bi-tropical-storm"></i> Tropical Fusion</span>
+                            </div>
+                            <p class="menu_list_desc">Aged rum, fresh passion fruit, blood orange cordial, sparkling
+                                float, and edible gold flakes.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="menu_list_item">
+                            <div class="menu_list_header">
+                                <h3 class="menu_list_title">Golden Mirage Smoke</h3>
+                                <span class="menu_list_tag"><i class="bi bi-fire"></i> Cedar Smoked</span>
+                            </div>
+                            <p class="menu_list_desc">Smoked bourbon, Atlas saffron syrup, aromatic bitters, roasted
+                                fig, presented inside an aromatic cedar smoke cloche.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="menu_list_item">
+                            <div class="menu_list_header">
+                                <h3 class="menu_list_title">Royal Berry Velvet</h3>
+                                <span class="menu_list_tag"><i class="bi bi-gem"></i> Rosewater Mist</span>
+                            </div>
+                            <p class="menu_list_desc">Botanical gin, wild blackberries, chilled champagne float, and
+                                delicate Moroccan rosewater mist.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="menu_list_item">
+                            <div class="menu_list_header">
+                                <h3 class="menu_list_title">Atlas Jasmine Garden (Artisanal Mocktail)</h3>
+                                <span class="menu_list_tag"><i class="bi bi-flower2"></i> Botanical Mocktail</span>
+                            </div>
+                            <p class="menu_list_desc">Cold-brewed jasmine tea, fresh cucumber essence, lime cordial,
+                                sparkling tonic, and rosemary sprig.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dietary Policy Notice -->
+            <div class="p-4 mt-5 text-center border border-warning-subtle bg-dark" data-aos="fade-up">
+                <p class="text-warning mb-1"><i class="bi bi-shield-check me-2"></i><strong>100% Certified Halal
+                        Dining</strong></p>
+                <p class="text-muted small mb-0">All our meats are ethically sourced and certified Halal. Please notify
+                    your server of any dietary preferences or allergen requirements.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         4. CTA BANNER
+         ====================================================================== -->
+    <section class="atmosphere_section" style="background-image: url('./assets/imgs/Restaurant/Food7.PNG');">
+        <div class="atmosphere_overlay"></div>
+        <div class="container">
+            <div class="atmosphere_content" data-aos="zoom-in">
+                <span class="section_label">RESERVE YOUR TABLE</span>
+                <h2 class="atmosphere_title">Ready for an Unmatched Culinary Journey?</h2>
+                <div class="gold_divider"></div>
+                <p class="atmosphere_text">
+                    Reserve your dining table or VIP lounge seating to experience our signature dishes alongside the
+                    live dinner show.
+                </p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="index.html#reservation" class="luxury_btn_gold">
+                        <i class="bi bi-calendar2-check"></i> Book Your Table Now
+                    </a>
+                    <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer"
+                        class="luxury_btn_whatsapp">
+                        <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         5. FOOTER
+         ====================================================================== -->
+    <footer class="luxury_footer">
+        <div class="container">
+            <div class="row g-5">
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <img src="./assets/imgs/Amsterdam_Logo.jpeg" alt="Amsterdam Luxury Logo" class="footer_brand_logo">
+                    <h3 class="footer_brand_title">AMSTERDAM LUXURY</h3>
+                    <p class="footer_brand_desc">
+                        An elevated dining experience where fine gastronomy meets the vibrancy of live dinner shows and
+                        luxurious Moroccan hospitality in Agadir.
+                    </p>
+                    <div class="footer_social_icons">
+                        <a href="https://instagram.com/amsterdamagadir" target="_blank" rel="noopener noreferrer"
+                            class="footer_social_btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://tiktok.com/@amsterdamluxury" target="_blank" rel="noopener noreferrer"
+                            class="footer_social_btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                            class="footer_social_btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer"
+                            class="footer_social_btn" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h4 class="footer_heading">Explore</h4>
+                    <ul class="footer_links_list">
+                        <li><a href="index.html" class="footer_link_item">Home</a></li>
+                        <li><a href="about.html" class="footer_link_item">About Us</a></li>
+                        <li><a href="menu.html" class="footer_link_item">Signature Menu</a></li>
+                        <li><a href="dinner-show.html" class="footer_link_item">Dinner Show</a></li>
+                        <li><a href="private-events.html" class="footer_link_item">Private Events</a></li>
+                        <li><a href="gallery.html" class="footer_link_item">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h4 class="footer_heading">Atmosphere</h4>
+                    <ul class="footer_links_list">
+                        <li><a href="dinner-show.html" class="footer_link_item">Live Shows</a></li>
+                        <li><a href="menu.html" class="footer_link_item">Prime Steaks</a></li>
+                        <li><a href="private-events.html" class="footer_link_item">VIP Lounge</a></li>
+                        <li><a href="private-events.html" class="footer_link_item">Private Salons</a></li>
+                        <li><a href="index.html#reservation" class="footer_link_item">Table Bookings</a></li>
+                        <li><a href="contact.html" class="footer_link_item">Valet Concierge</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <h4 class="footer_heading">VIP Society</h4>
+                    <p class="footer_newsletter_desc">
+                        Subscribe for exclusive invitations, celebrity dinner shows, and seasonal tasting previews.
+                    </p>
+                    <form class="newsletter_form"
+                        onsubmit="event.preventDefault(); show_luxury_toast('Subscribed Successfully', 'Thank you for joining the Amsterdam Luxury society.'); this.reset();">
+                        <input type="email" class="newsletter_input" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter_submit_btn" aria-label="Subscribe"><i
+                                class="bi bi-arrow-right"></i></button>
+                    </form>
+                    <small class="text-muted d-block mt-2">We respect your privacy. No spam.</small>
+                </div>
+
+            </div>
+
+            <div class="footer_bottom_bar">
+                <p class="copyright_text">&copy; 2026 Amsterdam Luxury. All Rights Reserved. Agadir, Morocco.</p>
+                <div class="legal_links">
+                    <a href="about.html" class="legal_link">Privacy Policy</a>
+                    <a href="about.html" class="legal_link">Terms of Service</a>
+                    <a href="contact.html" class="legal_link">House Policy</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Floating Actions -->
+    <div class="floating_actions_wrapper">
+        <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer"
+            class="floating_btn floating_btn_whatsapp" aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://instagram.com/amsterdamagadir" target="_blank" rel="noopener noreferrer"
+            class="floating_btn floating_btn_instagram" aria-label="Follow Instagram"><i
+                class="bi bi-instagram"></i></a>
+        <button id="back_to_top_btn" class="floating_btn floating_btn_top" aria-label="Back to top"><i
+                class="bi bi-arrow-up"></i></button>
+    </div>
+
+    <!-- Bootstrap 5.3 JS Bundle & AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
