@@ -1114,7 +1114,7 @@ p {
 .experience_card {
     background: var(--dark_card);
     border: 1px solid var(--gold_border_light);
-    padding: 42px 32px;
+    padding: 30px 22px;
     height: 100%;
     position: relative;
     overflow: hidden;
