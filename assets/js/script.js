@@ -153,22 +153,47 @@ function init_gallery_lightbox() {
     if (!modal_el) return;
 
     const modal_img = document.getElementById('lightbox_modal_img');
+    const modal_video = document.getElementById('lightbox_modal_video');
     const modal_title = document.getElementById('lightbox_modal_title');
     const modal_cat = document.getElementById('lightbox_modal_category');
 
     gallery_items.forEach(item => {
         item.addEventListener('click', () => {
-            const img = item.querySelector('.gallery_img');
+            const img = item.querySelector('img.gallery_img');
+            const video_src = item.getAttribute('data-video-src');
             const title = item.querySelector('.gallery_caption_title');
             const cat = item.querySelector('.gallery_caption_cat');
 
-            if (img && modal_img) modal_img.src = img.getAttribute('src');
+            if (video_src && modal_video) {
+                if (modal_img) modal_img.classList.add('d-none');
+                modal_video.classList.remove('d-none');
+                modal_video.src = video_src;
+                modal_video.currentTime = 0;
+                modal_video.play().catch(() => {});
+            } else if (img && modal_img) {
+                if (modal_video) {
+                    modal_video.pause();
+                    modal_video.src = '';
+                    modal_video.classList.add('d-none');
+                }
+                modal_img.classList.remove('d-none');
+                modal_img.src = img.getAttribute('src');
+            }
+
             if (title && modal_title) modal_title.textContent = title.textContent;
             if (cat && modal_cat) modal_cat.textContent = cat.textContent;
 
             const bs_modal = bootstrap.Modal.getOrCreateInstance(modal_el);
             bs_modal.show();
         });
+    });
+
+    modal_el.addEventListener('hidden.bs.modal', () => {
+        if (modal_video) {
+            modal_video.pause();
+            modal_video.src = '';
+            modal_video.classList.add('d-none');
+        }
     });
 }
 

@@ -71,8 +71,8 @@
             "Saturday",
             "Sunday"
           ],
-          "opens": "18:00",
-          "closes": "03:00"
+          "opens": "07:00",
+          "closes": "00:00"
         }
       ],
       "sameAs": [
@@ -304,7 +304,7 @@
                     <!-- Left: Framed Photograph -->
                     <div class="col-lg-6 col-12" data-aos="fade-right" data-aos-duration="1000">
                         <div class="about_image_frame">
-                            <img src="./assets/imgs/Restaurant/Restaurent_Asthetic1.webp"
+                            <img src="./assets/imgs/media/Media4.jpeg"
                                 alt="Amsterdam Luxury architectural illuminated staircase and atmosphere in Agadir"
                                 class="about_main_img" loading="lazy">
                             <div class="about_floating_badge">
@@ -848,7 +848,7 @@
 
                     <!-- Square Item 1 -->
                     <div class="gallery_item" data-filter="atmosphere" data-aos="fade-up">
-                        <img src="./assets/imgs/Restaurant/Restaurent_Asthetic2.webp"
+                        <img src="./assets/imgs/New_Gallery2.webp"
                             alt="Grand Dining Room with Illuminated Fire Onyx Walls" class="gallery_img" loading="lazy">
                         <div class="gallery_overlay">
                             <div class="gallery_zoom_icon"><i class="bi bi-arrows-fullscreen"></i></div>
@@ -881,7 +881,7 @@
 
                     <!-- Square Item 4 -->
                     <div class="gallery_item" data-filter="atmosphere" data-aos="fade-up" data-aos-delay="180">
-                        <img src="./assets/imgs/Restaurant/Restaurent_Asthetic1.webp"
+                        <img src="./assets/imgs/media/Media4.jpeg"
                             alt="Floating Illuminated Staircase with AM Emblem" class="gallery_img" loading="lazy">
                         <div class="gallery_overlay">
                             <div class="gallery_zoom_icon"><i class="bi bi-arrows-fullscreen"></i></div>
@@ -912,14 +912,18 @@
                         </div>
                     </div>
 
-                    <!-- Square Item 7 -->
-                    <div class="gallery_item" data-filter="atmosphere" data-aos="fade-up" data-aos-delay="360">
-                        <img src="./assets/imgs/Restaurant/Restaurent_Asthetic3.webp"
-                            alt="Tableside Glowing Amsterdam Treasure Chest Service" class="gallery_img" loading="lazy">
+                    <!-- Square Item 7 (Live Video) -->
+                    <div class="gallery_item position-relative" data-filter="atmosphere" data-video-src="./assets/imgs/media/Media_Video3.mp4" data-aos="fade-up" data-aos-delay="360">
+                        <div class="video_badge_indicator">
+                            <span class="video_pulse_dot"></span> Live
+                        </div>
+                        <video class="gallery_img" autoplay loop muted playsinline poster="./assets/imgs/Restaurant/Restaurent_Asthetic3.webp">
+                            <source src="./assets/imgs/media/Media_Video3.mp4" type="video/mp4">
+                        </video>
                         <div class="gallery_overlay">
-                            <div class="gallery_zoom_icon"><i class="bi bi-arrows-fullscreen"></i></div>
-                            <h4 class="gallery_caption_title">Tableside VIP Ritual</h4>
-                            <span class="gallery_caption_cat">Atmosphere</span>
+                            <div class="gallery_zoom_icon"><i class="bi bi-play-circle-fill"></i></div>
+                            <h4 class="gallery_caption_title">Tableside Smoke Ritual</h4>
+                            <span class="gallery_caption_cat">Culinary Theatre</span>
                         </div>
                     </div>
 
@@ -937,11 +941,11 @@
 
                     <!-- Square Item 9 -->
                     <div class="gallery_item" data-filter="atmosphere" data-aos="fade-up" data-aos-delay="480">
-                        <img src="./assets/imgs/Restaurant/Restaurent_Asthetic7.webp"
-                            alt="VIP Table Perspective & Crystal Chandelier Atrium" class="gallery_img" loading="lazy">
+                        <img src="./assets/imgs/New_Gallery1.webp"
+                            alt="I AM AMSTERDAM VIP Booth Salon with Glowing Signage" class="gallery_img" loading="lazy">
                         <div class="gallery_overlay">
                             <div class="gallery_zoom_icon"><i class="bi bi-arrows-fullscreen"></i></div>
-                            <h4 class="gallery_caption_title">Atrium & VIP Table</h4>
+                            <h4 class="gallery_caption_title">“I AM AMSTERDAM” VIP Salon</h4>
                             <span class="gallery_caption_cat">Atmosphere</span>
                         </div>
                     </div>
@@ -1112,10 +1116,10 @@
                                     <i class="bi bi-clock"></i>
                                 </div>
                                 <div>
-                                    <h4 class="contact_item_title">Hours of Service</h4>
+                                    <h4 class="contact_item_title">Opening Hours</h4>
                                     <p class="contact_item_text">
-                                        Dinner Service: 18:00 – 23:00<br>
-                                        Live Show & Lounge: 22:00 – 03:00
+                                        We are open daily from 7:00 AM until midnight.<br>
+                                        <span class="text-warning small">During the summer season (June, July and August), we remain open until 1:00 AM.</span>
                                     </p>
                                 </div>
                             </div>
@@ -1167,6 +1171,34 @@
 
     </main>
 
+    <!-- Lightbox Modal -->
+    <div class="modal fade modal_backdrop_custom" id="gallery_lightbox_modal" tabindex="-1"
+        aria-labelledby="lightbox_modal_title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content lightbox_modal_content">
+                <div class="modal-header lightbox_modal_header">
+                    <div>
+                        <h4 class="modal-title fs-5 text-white" id="lightbox_modal_title">Gallery Item</h4>
+                        <span class="text-warning small" id="lightbox_modal_category">Category</span>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body lightbox_modal_body">
+                    <img src="./assets/imgs/Amsterdam_BG.jpeg" alt="Amsterdam Luxury Full View" id="lightbox_modal_img"
+                        class="lightbox_img">
+                    <video id="lightbox_modal_video" class="lightbox_img d-none" controls playsinline></video>
+                </div>
+                <div class="modal-footer lightbox_modal_footer">
+                    <span class="text-muted small">Amsterdam Luxury • Agadir, Morocco</span>
+                    <a href="reservation.html" class="luxury_btn_gold py-2 px-3 fs-6">
+                        Reserve a Table
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- ======================================================================
          13. FOOTER
          ====================================================================== -->
@@ -1212,6 +1244,7 @@
                         <li><a href="dinner-show.html" class="footer_link_item">Dinner Show</a></li>
                         <li><a href="private-events.html" class="footer_link_item">Private Events</a></li>
                         <li><a href="gallery.html" class="footer_link_item">Gallery</a></li>
+                        <li><a href="reservation.html" class="footer_link_item">Reservations</a></li>
                     </ul>
                 </div>
 
@@ -1219,12 +1252,9 @@
                 <div class="col-lg-2 col-md-6 col-6">
                     <h4 class="footer_heading">Atmosphere</h4>
                     <ul class="footer_links_list">
-                        <li><a href="dinner-show.html" class="footer_link_item">Live Shows</a></li>
+                        <li><a href="dinner-show.html" class="footer_link_item">Live Music</a></li>
                         <li><a href="menu.html" class="footer_link_item">Prime Steaks</a></li>
-                        <li><a href="private-events.html" class="footer_link_item">VIP Lounge</a></li>
-                        <li><a href="private-events.html" class="footer_link_item">Private Salons</a></li>
-                        <li><a href="reservation.html" class="footer_link_item">Table Bookings</a></li>
-                        <li><a href="contact.html" class="footer_link_item">Valet Concierge</a></li>
+                        <li><a href="reservation.html" class="footer_link_item">Reservations</a></li>
                     </ul>
                 </div>
 
