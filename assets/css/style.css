@@ -1404,6 +1404,54 @@ p {
     color: var(--white_color);
 }
 
+/* Latest Seasonal Menu Accents & Badges */
+.menu_card_latest {
+    border-color: rgba(217, 161, 90, 0.45) !important;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 25px rgba(217, 161, 90, 0.12);
+}
+
+.menu_card_latest::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--primary_color), #F2CA85, transparent);
+    z-index: 3;
+}
+
+.menu_category_tag_latest {
+    background: linear-gradient(135deg, #D9A15A 0%, #B98245 100%) !important;
+    color: #0A0A0A !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.16em !important;
+    border-color: #F2CA85 !important;
+    box-shadow: 0 4px 15px rgba(217, 161, 90, 0.45);
+}
+
+.menu_item_badge_tag_latest {
+    background: rgba(217, 161, 90, 0.18) !important;
+    border-color: var(--primary_color) !important;
+    color: var(--gold_light) !important;
+    font-weight: 600 !important;
+}
+
+.menu_badge_pill_latest {
+    font-family: var(--body_font);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    background: linear-gradient(135deg, var(--primary_color) 0%, var(--secondary_color) 100%);
+    color: #0A0A0A;
+    padding: 6px 16px;
+    border-radius: 30px;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(217, 161, 90, 0.35);
+    text-transform: uppercase;
+}
+
 /* Detailed Menu List Style (for menu.html) */
 .menu_category_block {
     margin-bottom: 65px;

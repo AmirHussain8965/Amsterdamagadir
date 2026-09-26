@@ -106,8 +106,9 @@ function init_menu_tabs() {
             const category = btn.getAttribute('data-category');
 
             menu_items.forEach(item => {
-                const item_cat = item.getAttribute('data-category');
-                if (category === 'all' || item_cat === category) {
+                const item_cat = item.getAttribute('data-category') || '';
+                const categories = item_cat.trim().split(/\s+/);
+                if (category === 'all' || categories.includes(category)) {
                     item.style.display = 'block';
                 } else {
                     item.style.display = 'none';
@@ -133,8 +134,9 @@ function init_gallery_filter_tabs() {
             const filter_val = btn.getAttribute('data-filter') || 'all';
 
             gallery_items.forEach(item => {
-                const item_filter = item.getAttribute('data-filter');
-                if (filter_val === 'all' || item_filter === filter_val) {
+                const item_filter = item.getAttribute('data-filter') || '';
+                const filters = item_filter.trim().split(/\s+/);
+                if (filter_val === 'all' || filters.includes(filter_val)) {
                     item.style.display = 'block';
                 } else {
                     item.style.display = 'none';
