@@ -499,7 +499,7 @@
     <!-- ======================================================================
          6. RESERVATION CONFIRMATION MODAL
          ====================================================================== -->
-    <div class="modal fade" id="reservation_confirm_modal" tabindex="-1" aria-hidden="true">
+    <div class="modal fade modal_backdrop_custom" id="reservation_confirm_modal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content luxury_modal_content">
                 <div class="modal-header border-0 pb-0">
@@ -508,7 +508,7 @@
                 </div>
                 <div class="modal-body text-center px-4 pb-4">
                     <div class="modal_icon_gold mb-3">
-                        <i class="bi bi-check2-circle display-4 text-warning"></i>
+                        <i class="bi bi-check2-circle text-warning"></i>
                     </div>
                     <h3 class="modal-title mb-2 text-white">Reservation Request Formed</h3>
                     <p class="text-white-50 small mb-4">
@@ -517,19 +517,19 @@
                         (<span id="confirm_guests" class="text-white"></span>).
                     </p>
 
-                    <div class="p-3 mb-4 rounded bg-dark border border-secondary text-start">
+                    <div class="modal_info_box text-start">
                         <small class="text-warning text-uppercase d-block mb-1 font-monospace">Next Step:</small>
                         <p class="text-white-50 small mb-0">
                             Click below to open WhatsApp with your pre-filled reservation details and receive an immediate booking confirmation from our VIP Concierge.
                         </p>
                     </div>
 
-                    <div class="d-flex flex-column gap-2">
+                    <div class="d-flex flex-column gap-2 mt-3">
                         <a href="#" id="confirm_wa_redirect_btn" target="_blank" rel="noopener noreferrer"
                             class="luxury_btn_whatsapp w-100 text-center py-2">
                             <i class="bi bi-whatsapp"></i> Confirm Instantly on WhatsApp
                         </a>
-                        <button type="button" class="btn btn-sm btn-outline-secondary mt-1" data-bs-dismiss="modal">
+                        <button type="button" class="luxury_modal_close_btn mt-1" data-bs-dismiss="modal">
                             Close Window
                         </button>
                     </div>
@@ -537,23 +537,22 @@
             </div>
         </div>
     </div>
-
-    <!-- Floating Back to Top Button -->
-    <button class="back_to_top_btn" id="back_to_top_btn" aria-label="Back to Top">
-        <i class="bi bi-arrow-up"></i>
-    </button>
-
-    <!-- Floating WhatsApp Concierge Widget Button -->
-    <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer" class="floating_whatsapp_btn"
-        aria-label="Chat with Amsterdam Luxury on WhatsApp">
-        <i class="bi bi-whatsapp"></i>
-    </a>
-
-    <!-- Floating Instagram Widget Button -->
-    <a href="https://instagram.com/amsterdamagadir" target="_blank" rel="noopener noreferrer"
-        class="floating_instagram_btn" aria-label="Follow Amsterdam Luxury on Instagram">
-        <i class="bi bi-instagram"></i>
-    </a>
+    <!-- ======================================================================
+         FLOATING ACTION CONTROLS
+         ====================================================================== -->
+    <div class="floating_actions_wrapper">
+        <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer"
+            class="floating_btn floating_btn_whatsapp" aria-label="Chat with Amsterdam Luxury on WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="https://instagram.com/amsterdamagadir" target="_blank" rel="noopener noreferrer"
+            class="floating_btn floating_btn_instagram" aria-label="Follow Instagram">
+            <i class="bi bi-instagram"></i>
+        </a>
+        <button id="back_to_top_btn" class="floating_btn floating_btn_top" aria-label="Back to top">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+    </div>
 
     <!-- Luxury Toast Notification Container -->
     <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1080;">

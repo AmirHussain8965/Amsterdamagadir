@@ -219,52 +219,67 @@ function init_reservation_form() {
 
         const name = document.getElementById('res_name')?.value.trim();
         const phone = document.getElementById('res_phone')?.value.trim();
-        const email = document.getElementById('res_email')?.value.trim();
+        const email = document.getElementById('res_email')?.value.trim() || 'Not provided';
         const date = document.getElementById('res_date')?.value;
-        const time = document.getElementById('res_time')?.value;
-        const guests = document.getElementById('res_guests')?.value;
-        const seating = document.getElementById('res_seating')?.value || 'Main Dining';
-        const message = document.getElementById('res_notes')?.value.trim() || 'No special requests';
+        const time_select = document.getElementById('res_time');
+        const time = time_select?.value || '';
+        const time_label = time_select?.options[time_select.selectedIndex]?.text || time;
+        const guests_select = document.getElementById('res_guests');
+        const guests = guests_select?.value || '2';
+        const guests_label = guests_select?.options[guests_select.selectedIndex]?.text || `${guests} Guests`;
+        const seating_select = document.getElementById('res_seating');
+        const seating = seating_select?.value || 'Main Dining Hall';
+        const requests = document.getElementById('res_notes')?.value.trim() || 'None';
 
-        if (!name || !phone || !date || !time || !guests) {
-            show_luxury_toast('Missing Details', 'Please complete all required fields for your reservation.');
+        if (!name || !phone || !date || !time) {
+            show_luxury_toast('Missing Details', 'Please complete all required fields (Name, Phone, Date, and Time Slot).');
             return;
         }
 
-        // Generate prefilled WhatsApp booking message
-        const wa_text = encodeURIComponent(
-            `*TABLE RESERVATION REQUEST — AMSTERDAM LUXURY*\n\n` +
-            `👤 *Guest Name:* ${name}\n` +
-            `📞 *Phone:* ${phone}\n` +
-            `📧 *Email:* ${email || 'N/A'}\n` +
+        // Clean and readable text message structure for WhatsApp
+        const wa_message =
+            `⚜️ *VIP RESERVATION REQUEST — AMSTERDAM LUXURY* ⚜️\n` +
+            `*Location:* Agadir, Morocco\n` +
+            `━━━━━━━━━━━━━━━━━━━━━━━━━\n` +
+            `👤 *Full Name:* ${name}\n` +
+            `📞 *Phone Number:* ${phone}\n` +
+            `📧 *Email Address:* ${email}\n` +
             `📅 *Date:* ${date}\n` +
-            `⏰ *Time:* ${time}\n` +
-            `👥 *Guests:* ${guests} Person(s)\n` +
-            `✨ *Seating Area:* ${seating}\n` +
-            `📝 *Special Notes:* ${message}\n\n` +
-            `_Requested via Amsterdam Luxury Official Website_`
-        );
+            `⏰ *Time Slot:* ${time_label}\n` +
+            `👥 *Number of Guests:* ${guests_label}\n` +
+            `✨ *Seating Preference:* ${seating}\n` +
+            `📝 *Special Requests:* ${requests}\n` +
+            `━━━━━━━━━━━━━━━━━━━━━━━━━\n` +
+            `_Sent via Amsterdam Luxury Official Website_`;
 
-        const wa_url = `https://wa.me/212609070598?text=${wa_text}`;
+        // WhatsApp API link target number 212609070598
+        const wa_url = `https://wa.me/212609070598?text=${encodeURIComponent(wa_message)}`;
 
-        // Show confirmation modal
+        // Open WhatsApp in a new tab so user can send formatted reservation details
+        window.open(wa_url, '_blank');
+
+        // Update confirmation modal for seamless on-page confirmation
         const confirm_modal_el = document.getElementById('reservation_confirm_modal');
         if (confirm_modal_el) {
-            document.getElementById('confirm_guest_name').textContent = name;
-            document.getElementById('confirm_datetime').textContent = `${date} at ${time}`;
-            document.getElementById('confirm_guests').textContent = `${guests} Guests (${seating})`;
-            
+            const guest_el = document.getElementById('confirm_guest_name');
+            if (guest_el) guest_el.textContent = name;
+            const dt_el = document.getElementById('confirm_datetime');
+            if (dt_el) dt_el.textContent = `${date} at ${time}`;
+            const g_el = document.getElementById('confirm_guests');
+            if (g_el) g_el.textContent = `${guests_label} (${seating})`;
+
             const wa_confirm_btn = document.getElementById('confirm_wa_redirect_btn');
             if (wa_confirm_btn) {
                 wa_confirm_btn.href = wa_url;
             }
 
-            const bs_confirm = bootstrap.Modal.getOrCreateInstance(confirm_modal_el);
-            bs_confirm.show();
+            if (typeof bootstrap !== 'undefined' && bootstrap.Modal) {
+                const bs_confirm = bootstrap.Modal.getOrCreateInstance(confirm_modal_el);
+                bs_confirm.show();
+            }
         }
 
-        show_luxury_toast('Reservation Form Received', 'Your VIP table request is ready. Click below to verify via WhatsApp.');
-        form.reset();
+        show_luxury_toast('VIP Reservation Ready', 'Opening WhatsApp in a new tab with your pre-filled reservation details.');
     });
 }
 

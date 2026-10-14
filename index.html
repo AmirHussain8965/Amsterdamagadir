@@ -1761,26 +1761,36 @@
          ====================================================================== -->
     <div class="modal fade modal_backdrop_custom" id="reservation_confirm_modal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content lightbox_modal_content p-3 text-center">
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <i class="bi bi-check-circle-fill text-warning display-4"></i>
+            <div class="modal-content luxury_modal_content">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center px-4 pb-4">
+                    <div class="modal_icon_gold mb-3">
+                        <i class="bi bi-check2-circle text-warning"></i>
                     </div>
-                    <h3 class="text-white mb-2">Reservation Prepared</h3>
-                    <p class="text-muted small mb-4">
-                        Thank you, <strong class="text-white" id="confirm_guest_name">Guest</strong>! Your VIP table
-                        request for <strong class="text-white" id="confirm_datetime">Tonight</strong> (<span
-                            id="confirm_guests">2 Guests</span>) is prepared.
+                    <h3 class="modal-title mb-2 text-white">Reservation Request Formed</h3>
+                    <p class="text-white-50 small mb-4">
+                        Thank you, <strong id="confirm_guest_name" class="text-warning">Guest</strong>. We have
+                        prepared your VIP booking details for <span id="confirm_datetime" class="text-white">Tonight</span>
+                        (<span id="confirm_guests" class="text-white">2 Guests</span>).
                     </p>
-                    <p class="text-white small mb-4">
-                        Click below to finalize and confirm instantly with our VIP Host on WhatsApp:
-                    </p>
-                    <div class="d-flex flex-column gap-2">
+
+                    <div class="modal_info_box text-start">
+                        <small class="text-warning text-uppercase d-block mb-1 font-monospace">Next Step:</small>
+                        <p class="text-white-50 small mb-0">
+                            Click below to open WhatsApp with your pre-filled reservation details and receive an immediate booking confirmation from our VIP Concierge.
+                        </p>
+                    </div>
+
+                    <div class="d-flex flex-column gap-2 mt-3">
                         <a href="https://wa.me/212609070598" id="confirm_wa_redirect_btn" target="_blank"
-                            rel="noopener noreferrer" class="luxury_btn_whatsapp">
-                            <i class="bi bi-whatsapp"></i> Confirm on WhatsApp Now
+                            rel="noopener noreferrer" class="luxury_btn_whatsapp w-100 text-center py-2">
+                            <i class="bi bi-whatsapp"></i> Confirm Instantly on WhatsApp
                         </a>
-                        <button type="button" class="luxury_btn_outline mt-2" data-bs-dismiss="modal">
+                        <button type="button" class="luxury_modal_close_btn mt-1" data-bs-dismiss="modal">
+                            Close Window
                         </button>
                     </div>
                 </div>

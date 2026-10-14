@@ -1883,6 +1883,153 @@ p {
 }
 
 /* --------------------------------------------------------------------------
+   LUXURY RESERVATION CONFIRMATION MODAL
+   -------------------------------------------------------------------------- */
+.modal-backdrop.show {
+    opacity: 0.88 !important;
+    background-color: #050403 !important;
+    backdrop-filter: blur(8px) !important;
+}
+
+.modal_backdrop_custom {
+    background-color: rgba(5, 4, 3, 0.88);
+    backdrop-filter: blur(8px);
+}
+
+#reservation_confirm_modal .modal-content,
+.modal-content.luxury_modal_content,
+.luxury_modal_content {
+    background: linear-gradient(160deg, #1d1712 0%, #130f0c 60%, #0a0806 100%) !important;
+    border: 1.5px solid var(--primary_color) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.95), 0 0 35px rgba(217, 161, 90, 0.25) !important;
+    color: var(--cream_color) !important;
+    overflow: hidden;
+}
+
+.luxury_modal_content .modal-header {
+    border: none !important;
+    padding: 18px 22px 0 !important;
+}
+
+.luxury_modal_content .modal-body {
+    padding: 8px 28px 30px !important;
+    color: var(--cream_color) !important;
+}
+
+.luxury_modal_content .modal_icon_gold {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(217, 161, 90, 0.22) 0%, rgba(217, 161, 90, 0.05) 70%);
+    border: 1.5px solid var(--primary_color);
+    box-shadow: 0 0 30px rgba(217, 161, 90, 0.35);
+    margin: 0 auto 16px;
+}
+
+.luxury_modal_content .modal_icon_gold i {
+    font-size: 2.5rem;
+    color: var(--primary_color) !important;
+}
+
+.luxury_modal_content h3.modal-title,
+.luxury_modal_content .modal-title {
+    font-family: var(--heading_font) !important;
+    font-size: 1.95rem !important;
+    font-weight: 600 !important;
+    color: #FFFFFF !important;
+    letter-spacing: 0.03em !important;
+    margin-bottom: 12px !important;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+}
+
+.luxury_modal_content p {
+    color: var(--cream_color) !important;
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+.luxury_modal_content p.text-white-50,
+.luxury_modal_content .text-white-50 {
+    color: #E2D7C5 !important;
+}
+
+.luxury_modal_content strong.text-warning,
+.luxury_modal_content .text-warning {
+    color: #F2CA85 !important;
+    font-weight: 600;
+}
+
+.luxury_modal_content span.text-white,
+.luxury_modal_content strong.text-white {
+    color: #FFFFFF !important;
+    font-weight: 600;
+}
+
+.luxury_modal_content .modal_info_box {
+    background: rgba(26, 20, 16, 0.92) !important;
+    border: 1px solid var(--gold_border_light) !important;
+    border-left: 3px solid var(--primary_color) !important;
+    border-radius: 8px !important;
+    padding: 16px 18px !important;
+    box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 1.5rem;
+}
+
+.luxury_modal_content .modal_info_box small {
+    color: var(--primary_color) !important;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    font-size: 0.75rem;
+}
+
+.luxury_modal_content .modal_info_box p {
+    color: #E2D7C5 !important;
+    font-size: 0.88rem;
+    line-height: 1.55;
+}
+
+.luxury_modal_content .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+    opacity: 0.85;
+    transition: all var(--transition_fast);
+}
+
+.luxury_modal_content .btn-close:hover {
+    opacity: 1;
+    transform: rotate(90deg);
+}
+
+.luxury_modal_close_btn {
+    display: inline-block;
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgba(217, 161, 90, 0.4);
+    color: var(--cream_muted) !important;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-family: var(--body_font);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all var(--transition_smooth);
+    cursor: pointer;
+}
+
+.luxury_modal_close_btn:hover {
+    background: rgba(217, 161, 90, 0.15);
+    border-color: var(--primary_color);
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(217, 161, 90, 0.2);
+}
+
+/* --------------------------------------------------------------------------
    13. DINNER SHOW / EVENTS SPECIALTY CARDS
    -------------------------------------------------------------------------- */
 .show_schedule_card {
@@ -2530,14 +2677,76 @@ select.form_control_custom option {
     text-decoration: none;
 }
 
-.floating_btn_whatsapp {
-    background: #25D366;
-    color: #ffffff !important;
+.floating_btn_whatsapp,
+.floating_whatsapp_btn {
+    position: relative;
+    background: linear-gradient(145deg, #1e1712 0%, #100c09 100%);
+    border: 1.5px solid var(--primary_color);
+    color: var(--primary_color) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7), 0 0 15px rgba(217, 161, 90, 0.3);
+    animation: luxury_wa_glow 3.5s infinite ease-in-out;
 }
 
-.floating_btn_whatsapp:hover {
-    transform: scale(1.1) translateY(-3px);
-    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.6);
+.floating_btn_whatsapp i,
+.floating_whatsapp_btn i {
+    font-size: 1.45rem;
+    color: var(--primary_color);
+    transition: all var(--transition_smooth);
+}
+
+.floating_btn_whatsapp::after,
+.floating_whatsapp_btn::after {
+    content: 'VIP WhatsApp';
+    position: absolute;
+    right: calc(100% + 12px);
+    background: rgba(18, 14, 11, 0.95);
+    border: 1px solid var(--primary_color);
+    color: var(--primary_color);
+    font-family: var(--body_font);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 5px 12px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(8px);
+    transition: all var(--transition_smooth);
+    pointer-events: none;
+}
+
+.floating_btn_whatsapp:hover,
+.floating_whatsapp_btn:hover {
+    background: linear-gradient(135deg, var(--gold_light) 0%, var(--primary_color) 50%, var(--secondary_color) 100%);
+    border-color: var(--gold_light);
+    transform: scale(1.12) translateY(-4px);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.7), 0 0 25px rgba(217, 161, 90, 0.55);
+}
+
+.floating_btn_whatsapp:hover i,
+.floating_whatsapp_btn:hover i {
+    color: #0E0C0B !important;
+}
+
+.floating_btn_whatsapp:hover::after,
+.floating_whatsapp_btn:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+@keyframes luxury_wa_glow {
+    0%, 100% {
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7), 0 0 12px rgba(217, 161, 90, 0.25);
+        border-color: rgba(217, 161, 90, 0.55);
+    }
+    50% {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 22px rgba(217, 161, 90, 0.5);
+        border-color: var(--gold_light);
+    }
 }
 
 .floating_btn_instagram {
