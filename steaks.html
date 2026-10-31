@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Steaks & Master Butchery | Amsterdam Luxury Restaurant & Lounge Agadir</title>
+    <meta name="description"
+        content="Discover prime dry-aged steaks, certified Japanese A5 Kobe Wagyu, Australian Black Angus, and charcoal wood-fired butchery at Amsterdam Luxury Agadir.">
+    <meta name="keywords" content="Steakhouse Agadir, Kobe Beef Agadir, Wagyu Morocco, Halal Steaks, Amsterdam Luxury Restaurant, Dry-Aged Ribeye">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Prime Steaks & Master Butchery | Amsterdam Luxury Agadir">
+    <meta property="og:description"
+        content="Exceptional dry-aged butchery, charcoal wood-fired steaks, Japanese Kobe Wagyu, and tableside carving rituals in Agadir Bay.">
+    <meta property="og:type" content="restaurant.menu">
+    <meta property="og:image" content="./assets/imgs/Restaurant/Food7.webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- AOS Animation Library CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+    <!-- Custom Luxury Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ======================================================================
+         1. HEADER & NAVBAR
+         ====================================================================== -->
+    <header class="header_navbar">
+        <div class="container-fluid px-lg-5 px-3">
+            <div class="d-flex align-items-center justify-content-between">
+
+                <!-- Brand / Logo -->
+                <a href="index.html" class="brand_logo_link" aria-label="Amsterdam Luxury Homepage">
+                    <img src="./assets/imgs/Amsterdam_Logo.jpeg" alt="Amsterdam Luxury Logo" class="brand_logo_img">
+                    <div class="brand_text_box">
+                        <span class="brand_title">AMSTERDAM</span>
+                        <span class="brand_tagline">LUXURY • AGADIR</span>
+                    </div>
+                </a>
+
+                <!-- Right Action Controls: Reserve Table + Menu Toggle -->
+                <div class="d-flex align-items-center gap-3">
+                    <a href="reservation.html" class="luxury_btn_gold header_reserve_btn">
+                        <i class="bi bi-calendar2-check"></i> Reserve a Table
+                    </a>
+
+                    <!-- Luxury Menu Toggle Button -->
+                    <button class="header_menu_toggle_btn" id="header_menu_toggle_btn"
+                        aria-label="Toggle navigation menu">
+                        <span class="toggle_bars_icon">
+                            <span class="bar bar_top"></span>
+                            <span class="bar bar_mid"></span>
+                            <span class="bar bar_bot"></span>
+                        </span>
+                        <span class="toggle_btn_label">MENU</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Luxury Sidebar Navigation Drawer -->
+    <div class="drawer_backdrop"></div>
+    <aside class="luxury_sidebar_drawer" aria-label="Main Navigation Sidebar">
+        <div class="drawer_header">
+            <a href="index.html" class="drawer_brand_box">
+                <div class="drawer_brand_mark">
+                    <img src="./assets/imgs/Amsterdam_Logo.jpeg" alt="Amsterdam Luxury" class="drawer_brand_logo">
+                </div>
+                <div>
+                    <span class="drawer_brand_title">AMSTERDAM</span>
+                    <span class="drawer_brand_sub">HAUTE GASTRONOMIE • AGADIR</span>
+                </div>
+            </a>
+            <button class="drawer_close_btn" aria-label="Close navigation menu">
+                <span>CLOSE</span>
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+
+        <div class="drawer_body_content">
+            <ul class="drawer_links">
+                <li>
+                    <a href="index.html" class="drawer_link">
+                        <div class="drawer_link_left">
+                            <span class="drawer_link_index">01</span>
+                            <div class="drawer_link_text_wrap">
+                                <span class="drawer_link_title">Home</span>
+                                <span class="drawer_link_tag">Fine Dining & Lounge</span>
+                            </div>
+                        </div>
+                        <div class="drawer_link_action">
+                            <span class="drawer_link_glyph">✦</span>
+                            <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" class="drawer_link">
+                        <div class="drawer_link_left">
+                            <span class="drawer_link_index">02</span>
+                            <div class="drawer_link_text_wrap">
+                                <span class="drawer_link_title">About Us</span>
+                                <span class="drawer_link_tag">Our Heritage & Story</span>
+                            </div>
+                        </div>
+                        <div class="drawer_link_action">
+                            <span class="drawer_link_glyph">✦</span>
+                            <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="menu.html" class="drawer_link">
+                        <div class="drawer_link_left">
+                            <span class="drawer_link_index">03</span>
+                            <div class="drawer_link_text_wrap">
+                                <span class="drawer_link_title">Signature Menu</span>
+                                <span class="drawer_link_tag">Haute Gastronomie Halal</span>
+                            </div>
+                        </div>
+                        <div class="drawer_link_action">
+                            <span class="drawer_link_glyph">✦</span>
+                            <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="steaks.html" class="drawer_link active">
+                        <div class="drawer_link_left">
+                            <span class="drawer_link_index">04</span>
+                            <div class="drawer_link_text_wrap">
+                                <span class="drawer_link_title">Prime Steaks</span>
+                                <span class="drawer_link_tag">Dry-Aged Butchery & Wagyu</span>
+                            </div>
+                        </div>
+                        <div class="drawer_link_action">
+                            <span class="drawer_link_glyph">✦</span>
+                            <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="dinner-show.html" class="drawer_link">
+                        <div class="drawer_link_left">
+                            <span class="drawer_link_index">05</span>
+                            <div class="drawer_link_text_wrap">
+                                <span class="drawer_link_title">Live Dinner Show</span>
+                                <span class="drawer_link_tag">Sensorial Live Artistry</span>
+                            </div>
+                        </div>
+                        <div class="drawer_link_action">
+                            <span class="drawer_link_glyph">✦</span>
+                            <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="private-events.html" class="drawer_link">
+                        <div class="drawer_link_left">
+                            <span class="drawer_link_index">06</span>
+                            <div class="drawer_link_text_wrap">
+                                <span class="drawer_link_title">Private Events</span>
+                                <span class="drawer_link_tag">VIP Salons & Celebrations</span>
+                            </div>
+                        </div>
+                        <div class="drawer_link_action">
+                            <span class="drawer_link_glyph">✦</span>
+                            <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="gallery.html" class="drawer_link">
+                        <div class="drawer_link_left">
+                            <span class="drawer_link_index">07</span>
+                            <div class="drawer_link_text_wrap">
+                                <span class="drawer_link_title">Visual Gallery</span>
+                                <span class="drawer_link_tag">Atmosphere & Moments</span>
+                            </div>
+                        </div>
+                        <div class="drawer_link_action">
+                            <span class="drawer_link_glyph">✦</span>
+                            <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="reservation.html" class="drawer_link">
+                        <div class="drawer_link_left">
+                            <span class="drawer_link_index">08</span>
+                            <div class="drawer_link_text_wrap">
+                                <span class="drawer_link_title">Reservations</span>
+                                <span class="drawer_link_tag">VIP Tables & Concierge</span>
+                            </div>
+                        </div>
+                        <div class="drawer_link_action">
+                            <span class="drawer_link_glyph">✦</span>
+                            <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html" class="drawer_link">
+                        <div class="drawer_link_left">
+                            <span class="drawer_link_index">09</span>
+                            <div class="drawer_link_text_wrap">
+                                <span class="drawer_link_title">Contact & Location</span>
+                                <span class="drawer_link_tag">Agadir Bay, Morocco</span>
+                            </div>
+                        </div>
+                        <div class="drawer_link_action">
+                            <span class="drawer_link_glyph">✦</span>
+                            <i class="bi bi-arrow-right drawer_link_arrow"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="drawer_footer_cta">
+                <a href="reservation.html" class="luxury_btn_gold w-100 text-center mb-2">
+                    <i class="bi bi-calendar-check me-2"></i> Book VIP Table
+                </a>
+                <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer"
+                    class="luxury_btn_whatsapp w-100 text-center">
+                    <i class="bi bi-whatsapp me-2"></i> Chat on WhatsApp Concierge
+                </a>
+                <div class="drawer_socials">
+                    <span class="drawer_tagline_gold">✦ AGADIR BAY &bull; FINE DINING & LIVE SHOW ✦</span>
+                    <div class="drawer_social_icons">
+                        <a href="https://instagram.com/amsterdamagadir" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://tiktok.com/@amsterdamagadir" target="_blank" rel="noopener noreferrer"
+                            aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://facebook.com/amsterdamagadir" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer"
+                            aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ======================================================================
+         2. STEAKHOUSE HERO SECTION
+         ====================================================================== -->
+    <section class="steak_hero_section" style="background-image: url('./assets/imgs/Restaurant/Food7.webp');">
+        <div class="steak_hero_overlay"></div>
+        <div class="container position-relative z-2">
+            <div class="page_header_content" data-aos="fade-up">
+                <div class="page_breadcrumb mb-3">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <a href="menu.html">Gastronomy</a>
+                    <span>/</span>
+                    <span>Prime Steaks & Butchery</span>
+                </div>
+                <span class="section_label text-warning"><i class="bi bi-fire me-1"></i> LES VIANDES D'EXCEPTION</span>
+                <h1 class="page_header_title mt-2">Prime Steaks & Master Butchery</h1>
+                <div class="gold_divider my-3"></div>
+                <p class="page_header_desc mx-auto" style="max-width: 820px;">
+                    An uncompromising celebration of dry-aged butchery. From certified Japanese A5 Kobe Wagyu and Australian Black Angus to 45-day Himalayan salt-aged ribeyes, flame-charred over aromatic olive and citrus charcoal.
+                </p>
+                <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="reservation.html" class="luxury_btn_gold">
+                        <i class="bi bi-calendar-check"></i> Book a Steakhouse Table
+                    </a>
+                    <a href="https://wa.me/212609070598?text=Hello%20Amsterdam%20Luxury,%20I%20would%20like%20to%20inquire%20about%20a%20VIP%20table%20for%20the%20Prime%20Steaks%20experience."
+                        target="_blank" rel="noopener noreferrer" class="luxury_btn_outline">
+                        <i class="bi bi-whatsapp"></i> WhatsApp Concierge
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         3. BUTCHERY PILLARS (THE CRAFT)
+         ====================================================================== -->
+    <section class="py-5 bg-dark border-bottom border-warning-subtle">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="50">
+                    <div class="steak_pillar_card">
+                        <div class="steak_pillar_icon"><i class="bi bi-shield-check"></i></div>
+                        <h4 class="steak_pillar_title">Himalayan Salt Aging</h4>
+                        <p class="steak_pillar_desc">Aged 45 days in microclimate salt chambers to develop extraordinary tenderness and umami depth.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="100">
+                    <div class="steak_pillar_card">
+                        <div class="steak_pillar_icon"><i class="bi bi-fire"></i></div>
+                        <h4 class="steak_pillar_title">800°C Charcoal Searing</h4>
+                        <p class="steak_pillar_desc">Seared over Moroccan olive wood embers, locking in natural juices with a crisp caramelized crust.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="150">
+                    <div class="steak_pillar_card">
+                        <div class="steak_pillar_icon"><i class="bi bi-gem"></i></div>
+                        <h4 class="steak_pillar_title">Certified A5 Wagyu</h4>
+                        <p class="steak_pillar_desc">Authentic Japanese Kobe beef and Australian Black Angus with pristine intramuscular marbling.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
+                    <div class="steak_pillar_card">
+                        <div class="steak_pillar_icon"><i class="bi bi-patch-check"></i></div>
+                        <h4 class="steak_pillar_title">100% Certified Halal</h4>
+                        <p class="steak_pillar_desc">Ethically pasture-raised meats, hand-selected by our Master Butcher with full pedigree traceability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         4. FEATURED PRESTIGE STEAKS (PHOTOGRAPHED SHOWCASE)
+         ====================================================================== -->
+    <section class="luxury_section menu_section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section_label">EXECUTIVE SHOWCASE</span>
+                <h2 class="section_title">Signature Butchery Creations</h2>
+                <div class="gold_divider"></div>
+                <p class="section_subtitle">
+                    Signature tableside steaks plated with culinary artistry and paired with artisanal finishing butters.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Showcase 1: 24K Gold VIP Platter -->
+                <div class="col-lg-4 col-md-6 col-12 mb-4" data-aos="fade-up">
+                    <div class="menu_card steak_card_prestige">
+                        <div class="menu_img_box">
+                            <img src="./assets/imgs/Restaurant/Food7.webp"
+                                alt="Amsterdam 24K Gold VIP Steak Platter" class="menu_card_img" loading="lazy">
+                            <span class="menu_category_tag">24K Imperial</span>
+                        </div>
+                        <div class="menu_content_box">
+                            <div class="menu_header_row">
+                                <h3 class="menu_item_title">24K Gold VIP Platter</h3>
+                                <span class="menu_item_badge_tag">Edible 24K Gold</span>
+                            </div>
+                            <p class="menu_item_desc">Imperial prime steak draped in 24K edible gold leaf, paired with sizzling terracotta prawns, golden fries, and chef's signature herb reductions.</p>
+                            <div class="menu_item_footer">
+                                <span class="menu_item_badge"><i class="bi bi-stars"></i> Tableside Carving</span>
+                                <a href="reservation.html" class="menu_order_btn">Reserve Table <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Showcase 2: Prime Beef Tenderloin -->
+                <div class="col-lg-4 col-md-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu_card steak_card_prestige">
+                        <div class="menu_img_box">
+                            <img src="./assets/imgs/Restaurant/Food1.webp"
+                                alt="Prime Beef Tenderloin Filet Mignon" class="menu_card_img" loading="lazy">
+                            <span class="menu_category_tag">Filet Mignon</span>
+                        </div>
+                        <div class="menu_content_box">
+                            <div class="menu_header_row">
+                                <h3 class="menu_item_title">Prime Beef Tenderloin</h3>
+                                <span class="menu_item_badge_tag">Ultra Tender Cut</span>
+                            </div>
+                            <p class="menu_item_desc">Charcoal-grilled center-cut grass-fed tenderloin, served with roasted seasonal vegetables, sweet corn, bone marrow truffle butter and refined demi-glace.</p>
+                            <div class="menu_item_footer">
+                                <span class="menu_item_badge"><i class="bi bi-fire"></i> Chef Signature</span>
+                                <a href="reservation.html" class="menu_order_btn">Reserve Table <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Showcase 3: Glazed Beef Ribs Banquet -->
+                <div class="col-lg-4 col-md-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu_card steak_card_prestige">
+                        <div class="menu_img_box">
+                            <img src="./assets/imgs/Restaurant/Food6.webp"
+                                alt="Glazed Beef Ribs Banquet" class="menu_card_img" loading="lazy">
+                            <span class="menu_category_tag">Slow-Braised</span>
+                        </div>
+                        <div class="menu_content_box">
+                            <div class="menu_header_row">
+                                <h3 class="menu_item_title">Glazed Beef Ribs Banquet</h3>
+                                <span class="menu_item_badge_tag">Royal Sharing</span>
+                            </div>
+                            <p class="menu_item_desc">Slow-glazed beef short ribs on the bone with toasted sesame, accompanied by creamy mushroom chicken fricassee, basmati rice, and glazed vegetables.</p>
+                            <div class="menu_item_footer">
+                                <span class="menu_item_badge"><i class="bi bi-stars"></i> Feast for Two</span>
+                                <a href="reservation.html" class="menu_order_btn">Reserve Table <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==============================================================
+                 5. THE COMPLETE STEAKHOUSE MENU CARDS
+                 ============================================================== -->
+            <div class="mt-5 pt-4">
+
+                <!-- Board 1: Prime Steaks & Dry-Aged Cuts -->
+                <div class="luxury_menu_card_board" data-aos="fade-up">
+                    <div class="card_board_header">
+                        <span class="card_board_category_tag"><i class="bi bi-fire"></i> Charcoal Grill & Dry-Aged Butchery</span>
+                        <h3 class="card_board_title">Prime Dry-Aged Steaks</h3>
+                        <p class="card_board_subtitle">Steaks de Qualité & Pièces Maîtresses</p>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-lg-6 col-12">
+                            <div class="menu_card_entry">
+                                <div class="menu_card_entry_top">
+                                    <h4 class="menu_card_entry_name">Kobe Beef Entrecôte 250g (Japan)</h4>
+                                    <span class="menu_card_entry_badge">A5 Wagyu Gold</span>
+                                </div>
+                                <p class="menu_card_entry_sub">Entrecôte 250g de bœuf de Kobe authentique du Japon, persillage d'exception</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="menu_card_entry">
+                                <div class="menu_card_entry_top">
+                                    <h4 class="menu_card_entry_name">Black Angus Ribeye (Australia)</h4>
+                                    <span class="menu_card_entry_badge">Marble Score 4+</span>
+                                </div>
+                                <p class="menu_card_entry_sub">Black Angus Ribeye australien, texture fondante et saveur beurrée intense</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="menu_card_entry">
+                                <div class="menu_card_entry_top">
+                                    <h4 class="menu_card_entry_name">Beef Filet (Filet de Bœuf)</h4>
+                                    <span class="menu_card_entry_badge">Center Cut</span>
+                                </div>
+                                <p class="menu_card_entry_sub">Filet de bœuf tendre et délicat, saisi minute au charbon de bois</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="menu_card_entry">
+                                <div class="menu_card_entry_top">
+                                    <h4 class="menu_card_entry_name">Entrecôte Steak</h4>
+                                    <span class="menu_card_entry_badge">Prime Rib Cut</span>
+                                </div>
+                                <p class="menu_card_entry_sub">Entrecôte persillée maturée, croûte caramélisée et jus de viande corsé</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="menu_card_entry">
+                                <div class="menu_card_entry_top">
+                                    <h4 class="menu_card_entry_name">Beef Ribs (Côtes de Bœuf)</h4>
+                                    <span class="menu_card_entry_badge">Prime Bone-In</span>
+                                </div>
+                                <p class="menu_card_entry_sub">Côtes de bœuf généreuses sur os, rôties avec beurre aux herbes de Provence</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="menu_card_entry">
+                                <div class="menu_card_entry_top">
+                                    <h4 class="menu_card_entry_name">Amsterdam Luxe Grill</h4>
+                                    <span class="menu_card_entry_badge">Imperial Platter</span>
+                                </div>
+                                <p class="menu_card_entry_sub">Grillade Amsterdam Luxe, somptueuse sélection des meilleures viandes du Chef</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Board 2: Slow-Glazed & Braised Specialties -->
+                <div class="luxury_menu_card_board" data-aos="fade-up">
+                    <div class="card_board_header">
+                        <span class="card_board_category_tag"><i class="bi bi-clock-history"></i> Slow-Glazed & Confit Meats</span>
+                        <h3 class="card_board_title">Slow-Glazed & Braised Cuts</h3>
+                        <p class="card_board_subtitle">Travers de Bœuf, Agneau & Spécialités Braisées</p>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-lg-6 col-12">
+                            <div class="menu_card_entry">
+                                <div class="menu_card_entry_top">
+                                    <h4 class="menu_card_entry_name">Spare Ribs (Travers de Bœuf)</h4>
+                                    <span class="menu_card_entry_badge">Slow Glazed</span>
+                                </div>
+                                <p class="menu_card_entry_sub">Travers de bœuf confits à basse température, laqués au miel et sésame toasté</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="menu_card_entry">
+                                <div class="menu_card_entry_top">
+                                    <h4 class="menu_card_entry_name">Lamb Chops (Côtes de Bœuf / Agneau)</h4>
+                                    <span class="menu_card_entry_badge">Charcoal Grill</span>
+                                </div>
+                                <p class="menu_card_entry_sub">Côtes d'agneau braisées au romarin sauvage et fleur de sel de Guérande</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="menu_card_entry">
+                                <div class="menu_card_entry_top">
+                                    <h4 class="menu_card_entry_name">Beef Slices with Cream & Mushrooms</h4>
+                                    <span class="menu_card_entry_badge">Velvet Truffle</span>
+                                </div>
+                                <p class="menu_card_entry_sub">Émincé de bœuf à la crème onctueuse, poêlée de champignons de Paris</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="menu_card_entry">
+                                <div class="menu_card_entry_top">
+                                    <h4 class="menu_card_entry_name">Dutch Meatballs</h4>
+                                    <span class="menu_card_entry_badge">Dutch Classic</span>
+                                </div>
+                                <p class="menu_card_entry_sub">Boulettes de viande à la hollandaise, mijotées dans un ragoût pomodoro riche</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="menu_card_entry">
+                                <div class="menu_card_entry_top">
+                                    <h4 class="menu_card_entry_name">Beef Tacos (Premium Quality)</h4>
+                                    <span class="menu_card_entry_badge">Artisan Shells</span>
+                                </div>
+                                <p class="menu_card_entry_sub">Tacos au bœuf de qualité supérieure, réduction de jus corsé & ciboulette</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Board 3: Émincés Maison & Poultry Selection -->
+                <div class="luxury_menu_card_board" data-aos="fade-up">
+                    <div class="card_board_header">
+                        <span class="card_board_category_tag"><i class="bi bi-award"></i> Tender Sautéed Strips & Fine Poultry</span>
+                        <h3 class="card_board_title">Émincés & Poultry Selection</h3>
+                        <p class="card_board_subtitle">Émincés Maison & Volailles d'Exception</p>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-lg-6 col-12">
+                            <div class="menu_card_entry">
+                                <div class="menu_card_entry_top">
+                                    <h4 class="menu_card_entry_name">Beef Emincé (Émincé de Bœuf)</h4>
+                                    <span class="menu_card_entry_badge">House Special</span>
+                                </div>
+                                <p class="menu_card_entry_sub">Émincé de bœuf mariné, sauté minute aux oignons nouveaux et poivre moulu</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="menu_card_entry">
+                                <div class="menu_card_entry_top">
+                                    <h4 class="menu_card_entry_name">Chicken Emincé (Émincé de Poulet)</h4>
+                                    <span class="menu_card_entry_badge">House Special</span>
+                                </div>
+                                <p class="menu_card_entry_sub">Émincé de blanc de poulet tendre sauté aux aromates et beurre clarifié</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="menu_card_entry">
+                                <div class="menu_card_entry_top">
+                                    <h4 class="menu_card_entry_name">Slow-Cooked Chicken Breast</h4>
+                                    <span class="menu_card_entry_badge">Sous-Vide Tender</span>
+                                </div>
+                                <p class="menu_card_entry_sub">Blanc de poulet cuit à basse température, velouté de champignons et herbes fraîches</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="menu_card_entry">
+                                <div class="menu_card_entry_top">
+                                    <h4 class="menu_card_entry_name">Chicken Satay (Poulet Satay)</h4>
+                                    <span class="menu_card_entry_badge">Dutch-Indo Satay</span>
+                                </div>
+                                <p class="menu_card_entry_sub">Brochettes de poulet grillé, sauce satay hollandaise aux éclats de cacahuète</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Board 4: Butcher's House Sauces & Finitions -->
+                <div class="luxury_menu_card_board" data-aos="fade-up">
+                    <div class="card_board_header">
+                        <span class="card_board_category_tag"><i class="bi bi-droplet-half"></i> Chef's Finishing Reductions</span>
+                        <h3 class="card_board_title">Butcher's Signature Sauces</h3>
+                        <p class="card_board_subtitle">Sauces Artisanales Maison pour vos Grillades</p>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-lg-4 col-12">
+                            <div class="menu_card_entry">
+                                <div class="menu_card_entry_top">
+                                    <h4 class="menu_card_entry_name">Wild Mushroom Sauce</h4>
+                                    <span class="menu_card_entry_badge">Velvet Cream</span>
+                                </div>
+                                <p class="menu_card_entry_sub">Sauce aux champignons de sous-bois et crème fraîche</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="menu_card_entry">
+                                <div class="menu_card_entry_top">
+                                    <h4 class="menu_card_entry_name">Madame Janet Hot Sauce</h4>
+                                    <span class="menu_card_entry_badge">Fiery & Fruity</span>
+                                </div>
+                                <p class="menu_card_entry_sub">Sauce piquante artisanale aux piments jaunes Madame Janet</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="menu_card_entry">
+                                <div class="menu_card_entry_top">
+                                    <h4 class="menu_card_entry_name">Green Peppercorn Sauce</h4>
+                                    <span class="menu_card_entry_badge">Classic Bistro</span>
+                                </div>
+                                <p class="menu_card_entry_sub">Sauce au poivre vert de Madagascar flambé et réduction de jus</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Dietary Policy Notice -->
+            <div class="p-4 mt-5 text-center border border-warning-subtle bg-dark" data-aos="fade-up">
+                <p class="text-warning mb-1"><i class="bi bi-shield-check me-2"></i><strong>100% Certified Halal Butchery</strong></p>
+                <p class="text-muted small mb-0">All our beef, lamb, and poultry cuts are ethically sourced and certified Halal. Please specify your preferred doneness (Rare, Medium Rare, Medium, Well Done) with your server.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         6. TABLESIDE CEREMONY & VIP CARVING SPOTLIGHT
+         ====================================================================== -->
+    <section class="editorial_section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-12" data-aos="fade-right">
+                    <div class="editorial_image_wrapper">
+                        <img src="./assets/imgs/Restaurant/Food7.webp" alt="Tableside Carving Ceremony"
+                            class="editorial_main_img" loading="lazy">
+                        <div class="editorial_gold_stamp">
+                            <i class="bi bi-stars"></i>
+                            <span>VIP CARVING</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 mt-lg-0 mt-4" data-aos="fade-left">
+                    <span class="section_label">THE GASTRONOMIC RITUAL</span>
+                    <h2 class="editorial_title">Tableside Carving & Wood Smoke Ceremony</h2>
+                    <div class="gold_divider"></div>
+                    <p class="editorial_text">
+                        Dining at Amsterdam Luxury is not merely a meal; it is a dramatic live performance. Every signature steak and imperial tomahawk cut is unveiled tableside under an aromatic glass cloche, gently kissed with aromatic wood smoke and carved with artisanal precision.
+                    </p>
+                    <p class="editorial_text">
+                        Finished with 24-karat gold leaf flakes, smoked sea salt crystals, and drizzled with warm bone marrow truffle butter before your eyes.
+                    </p>
+                    <div class="mt-4">
+                        <a href="reservation.html" class="luxury_btn_gold me-3">
+                            <i class="bi bi-calendar-check"></i> Book Your VIP Table
+                        </a>
+                        <a href="https://wa.me/212609070598?text=Hello%20Amsterdam%20Luxury,%20I%20would%20like%20to%20reserve%20a%20table%20for%20the%20VIP%20Steaks%20ritual."
+                            target="_blank" rel="noopener noreferrer" class="luxury_btn_whatsapp">
+                            <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         7. FOOTER
+         ====================================================================== -->
+    <footer class="luxury_footer">
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="footer_brand_box">
+                        <img src="./assets/imgs/Amsterdam_Logo.jpeg" alt="Amsterdam Luxury" class="footer_logo_img">
+                        <h3 class="footer_brand_name">AMSTERDAM LUXURY</h3>
+                        <p class="footer_brand_sub">RESTAURANT &bull; LOUNGE &bull; SHOW</p>
+                        <p class="footer_about_text">
+                            Agadir Bay's premier dining destination uniting prime dry-aged butchery, French-Moroccan haute cuisine, and sensorial dinner show artistry.
+                        </p>
+                        <div class="footer_social_links">
+                            <a href="https://instagram.com/amsterdamagadir" target="_blank" rel="noopener noreferrer"
+                                aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="https://tiktok.com/@amsterdamagadir" target="_blank" rel="noopener noreferrer"
+                                aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                            <a href="https://facebook.com/amsterdamagadir" target="_blank" rel="noopener noreferrer"
+                                aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer"
+                                aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h4 class="footer_heading">Gastronomy</h4>
+                    <ul class="footer_nav_list">
+                        <li><a href="menu.html" class="footer_link_item">Full Menu</a></li>
+                        <li><a href="steaks.html" class="footer_link_item active">Prime Steaks</a></li>
+                        <li><a href="menu.html#cat-burgers" class="footer_link_item">Burgers</a></li>
+                        <li><a href="menu.html#cat-desserts" class="footer_link_item">Desserts</a></li>
+                        <li><a href="gallery.html" class="footer_link_item">Visual Gallery</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h4 class="footer_heading">Experience</h4>
+                    <ul class="footer_nav_list">
+                        <li><a href="about.html" class="footer_link_item">Our Story</a></li>
+                        <li><a href="dinner-show.html" class="footer_link_item">Live Dinner Show</a></li>
+                        <li><a href="private-events.html" class="footer_link_item">VIP Celebrations</a></li>
+                        <li><a href="reservation.html" class="footer_link_item">Reservations</a></li>
+                        <li><a href="contact.html" class="footer_link_item">Contact & Location</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <h4 class="footer_heading">VIP Society</h4>
+                    <p class="footer_newsletter_desc">
+                        Subscribe for exclusive culinary invitations, celebrity dinner shows, and dry-aged tasting previews.
+                    </p>
+                    <form class="newsletter_form"
+                        onsubmit="event.preventDefault(); show_luxury_toast('Subscribed Successfully', 'Thank you for joining the Amsterdam Luxury society.'); this.reset();">
+                        <input type="email" class="newsletter_input" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter_submit_btn" aria-label="Subscribe"><i
+                                class="bi bi-arrow-right"></i></button>
+                    </form>
+                    <small class="text-muted d-block mt-2">100% Certified Halal. We respect your privacy.</small>
+                </div>
+
+            </div>
+
+            <div class="footer_bottom_bar">
+                <p class="copyright_text">&copy; 2026 Amsterdam Luxury. All Rights Reserved. Agadir, Morocco.</p>
+                <div class="legal_links">
+                    <a href="about.html" class="legal_link">Privacy Policy</a>
+                    <a href="about.html" class="legal_link">Terms of Service</a>
+                    <a href="contact.html" class="legal_link">House Policy</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Floating Actions -->
+    <div class="floating_actions_wrapper">
+        <a href="https://wa.me/212609070598" target="_blank" rel="noopener noreferrer"
+            class="floating_btn floating_btn_whatsapp" aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://instagram.com/amsterdamagadir" target="_blank" rel="noopener noreferrer"
+            class="floating_btn floating_btn_instagram" aria-label="Follow Instagram"><i
+                class="bi bi-instagram"></i></a>
+        <button id="back_to_top_btn" class="floating_btn floating_btn_top" aria-label="Back to top"><i
+                class="bi bi-arrow-up"></i></button>
+    </div>
+
+    <!-- Bootstrap 5.3 JS Bundle & AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
+
